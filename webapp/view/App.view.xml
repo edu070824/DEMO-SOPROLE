@@ -1,0 +1,7 @@
+<mvc:View
+  controllerName="soprole.portal.controller.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  displayBlock="true">
+  <App id="app" busyIndicatorDelay="0" />
+</mvc:View>

@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+  <VBox class="soproleProductCard">
+    <VBox class="soproleImgWrap">
+      <Label text="{Discount}" class="soproleTagChip soproleDiscChip" visible="{= !!${Discount} }" />
+      <Image src="{ImageUrl}" class="soproleProductImg" densityAware="false" />
+    </VBox>
+    <Text text="{Brand}" class="soproleProductBrand" />
+    <Text text="{Name}" maxLines="2" class="soproleProductName" />
+    <HBox alignItems="Baseline" class="soprolePriceRow">
+      <Text text="{path: 'Price', formatter: '.formatter.price'}" class="soprolePrice" />
+      <Text text="/un" class="soproleMuted soproleUnit" />
+    </HBox>
+    <HBox class="soproleBulkRow" visible="{= !!${Bulk} }" wrap="Wrap">
+      <Label class="soproleBulkChip" visible="{= !!${Bulk/0} }" text="{ parts: ['Bulk/0/min','Bulk/0/price'], formatter: '.formatter.bulkText' }" />
+      <Label class="soproleBulkChip" visible="{= !!${Bulk/1} }" text="{ parts: ['Bulk/1/min','Bulk/1/price'], formatter: '.formatter.bulkText' }" />
+    </HBox>
+    <VBox class="soproleBenefits" visible="{= !!${Benefits} }">
+      <Text text="• {Benefits/0}" visible="{= !!${Benefits/0} }" class="soproleBenefit1" />
+      <Text text="• {Benefits/1}" visible="{= !!${Benefits/1} }" class="soproleBenefit2" />
+      <Text text="• {Benefits/2}" visible="{= !!${Benefits/2} }" class="soproleBenefit3" />
+    </VBox>
+    <HBox alignItems="Center" class="soproleProductFoot soproleFullFoot">
+      <HBox alignItems="Center" class="soproleQtyStepper">
+        <Button icon="sap-icon://less" press=".onQtyMinus" class="soproleStepBtn" />
+        <Text text="{Qty}" class="soproleQtyVal" />
+        <Button icon="sap-icon://add" press=".onQtyPlus" class="soproleStepBtn" />
+      </HBox>
+      <Button text="Add" icon="sap-icon://add" press=".onAddProduct" class="soproleAddDark" />
+    </HBox>
+  </VBox>
+</core:FragmentDefinition>

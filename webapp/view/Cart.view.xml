@@ -1,0 +1,271 @@
+<mvc:View
+  controllerName="soprole.portal.controller.Cart"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+  xmlns="sap.m"
+  displayBlock="true">
+
+  <Page
+    id="cartPage"
+    showHeader="false"
+    backgroundDesign="Solid"
+    class="soprolePage soproleCartPage">
+
+    <content>
+
+      <!-- Barra superior negra -->
+      <HBox class="soproleNotice" justifyContent="Center" alignItems="Center">
+        <core:Icon src="sap-icon://message-information" class="soproleNoticeIcon" />
+        <Text text="Winter logistics: order cut-off moves to 14:00 from Mon 9 Jun." class="soproleNoticeText" />
+        <Link text="Browse winter lines" class="soproleNoticeLink" />
+      </HBox>
+
+      <!-- Header existente -->
+      <core:Fragment fragmentName="soprole.portal.view.Header" type="XML" />
+
+      <VBox class="soproleCartPageBody">
+
+        <!-- Breadcrumb -->
+        <HBox alignItems="Center" class="soproleBreadcrumb">
+          <Link text="Home" press=".onNavHome" />
+          <Text text="/" class="soproleMuted" />
+          <Text text="Cart" class="soproleMutedStrong" />
+        </HBox>
+
+        <!-- Título -->
+        <HBox justifyContent="SpaceBetween" alignItems="Center" class="soproleCartHeaderRow">
+          <HBox alignItems="Center">
+            <Title text="Your cart" level="H1" class="soproleCartPageTitle" />
+
+            <HBox alignItems="Center" class="soproleBlueprint">
+              <core:Icon src="sap-icon://hint" class="soproleBpIcon" />
+              <Text text="Blueprint" />
+            </HBox>
+          </HBox>
+
+          <Button
+            text="Clear cart"
+            icon="sap-icon://delete"
+            type="Transparent"
+            press=".onClearCart"
+            class="soproleClearCartBtn" />
+        </HBox>
+
+        <!-- Contenido principal -->
+        <HBox alignItems="Start" class="soproleCartContent" wrap="Wrap">
+
+          <!-- Panel izquierdo: productos -->
+          <VBox class="soproleCartProductsPanel">
+
+            <List
+              id="cartPageList"
+              items="{cart>/items}"
+              noDataText="Tu carrito está vacío"
+              showSeparators="Inner"
+              class="soproleCartPageList">
+
+              <CustomListItem>
+                <HBox alignItems="Center" class="soproleCartPageRow">
+
+                  <Image
+                    src="{cart>ImageUrl}"
+                    densityAware="false"
+                    class="soproleCartPageImg" />
+
+                  <VBox class="soproleCartPageInfo">
+                    <Text text="{cart>Brand}" class="soproleCartPageBrand" />
+                    <Text text="{cart>Name}" class="soproleCartPageName" maxLines="2" />
+
+                    <HBox alignItems="Center">
+                      <Text text="{path:'cart>Price', formatter:'.formatMoney'}" class="soproleMuted" />
+                      <Text text=" · EA" class="soproleMuted" />
+
+                      <Button
+                        text="Remove"
+                        icon="sap-icon://delete"
+                        type="Transparent"
+                        press=".onCartRemove"
+                        class="soproleCartPageRemove" />
+                    </HBox>
+                  </VBox>
+
+                  <HBox alignItems="Center" justifyContent="Center" class="soproleCartPageQty">
+                    <Button icon="sap-icon://less" press=".onCartMinus" class="soproleStepBtn" />
+                    <Text text="{cart>Qty}" class="soproleQtyVal" />
+                    <Button icon="sap-icon://add" press=".onCartPlus" class="soproleStepBtn" />
+                  </HBox>
+
+                  <Text
+                    text="{ parts: ['cart>Price','cart>Qty'], formatter: '.formatLineTotal' }"
+                    class="soproleCartPageLineTotal" />
+
+                </HBox>
+              </CustomListItem>
+            </List>
+
+          </VBox>
+
+          <!-- Panel derecho: resumen -->
+          <VBox class="soproleCartSummaryPanel">
+
+            <Title text="Summary" level="H2" class="soproleCartSummaryTitle" />
+
+            <HBox justifyContent="SpaceBetween" class="soproleSummaryLine">
+              <Text text="Subtotal" class="soproleMuted" />
+              <Text text="{path:'cart>/subtotal', formatter:'.formatMoney'}" />
+            </HBox>
+
+            <HBox justifyContent="SpaceBetween" class="soproleSummaryLine soproleOrangeText">
+              <Text text="$8 OFF $150" />
+              <Text text="{path:'cart>/discount', formatter:'.formatDiscount'}" />
+            </HBox>
+
+            <HBox justifyContent="SpaceBetween" class="soproleSummaryLine soproleOrangeText">
+              <Text text="You save" />
+              <Text text="{path:'cart>/discount', formatter:'.formatDiscount'}" />
+            </HBox>
+
+            <HBox class="soproleCouponRow">
+              <Input placeholder="Discount code" />
+              <Button text="Apply" type="Transparent" />
+            </HBox>
+
+            <HBox justifyContent="SpaceBetween" class="soproleSummaryLine">
+              <Text text="Net subtotal" class="soproleMuted" />
+              <Text text="{path:'cart>/netSubtotal', formatter:'.formatMoney'}" />
+            </HBox>
+
+            <HBox justifyContent="SpaceBetween" class="soproleSummaryLine">
+              <Text text="VAT (19%)" class="soproleMuted" />
+              <Text text="{path:'cart>/vat', formatter:'.formatMoney'}" />
+            </HBox>
+
+            <HBox justifyContent="SpaceBetween" alignItems="Center" class="soproleCartTotalRow">
+              <Title text="Total" level="H2" />
+              <Title text="{path:'cart>/grandTotal', formatter:'.formatMoney'}" level="H2" />
+            </HBox>
+
+            <HBox alignItems="Center" class="soproleRewardBox">
+              <core:Icon src="sap-icon://activity-individual" />
+              <Text text="You'll earn points · 1.25× Silver" />
+            </HBox>
+
+            <HBox alignItems="Center" class="soproleRewardBox">
+              <core:Icon src="sap-icon://favorite" />
+              <Text text="Full-Range Explorer — 2 of 3 categories, 1 to go → badge" />
+            </HBox>
+
+            <Button
+              text="Continue to checkout"
+              icon="sap-icon://arrow-right"
+              iconFirst="false"
+              type="Emphasized"
+              press=".onCheckout"
+              class="soproleCheckoutBtn" />
+
+            <Button
+              text="Save as list"
+              icon="sap-icon://refresh"
+              type="Transparent"
+              class="soproleSaveListBtn" />
+
+            <HBox justifyContent="Center" class="soproleCartLinks">
+              <Link text="Keep shopping" press=".onNavCatalog" />
+              <Link text="My lists" />
+            </HBox>
+
+          </VBox>
+
+        </HBox>
+
+        <!-- Productos sugeridos abajo -->
+        <VBox class="soproleSuggestedCartBox">
+
+          <HBox justifyContent="SpaceBetween" alignItems="Center" class="soproleSuggestedHeader">
+            <VBox>
+              <Text
+                text="✦ FROM YOUR USUAL ORDER"
+                class="soproleSuggestedMiniTitle" />
+
+              <HBox alignItems="Center">
+                <Title
+                  text="Not in this cart yet"
+                  level="H3"
+                  class="soproleSuggestedTitle" />
+
+                <HBox alignItems="Center" class="soproleBlueprint">
+                  <core:Icon src="sap-icon://hint" class="soproleBpIcon" />
+                  <Text text="Blueprint" />
+                </HBox>
+              </HBox>
+
+              <Text
+                text="Items from your suggested order you haven’t added — add them before you check out so you don’t run short."
+                class="soproleMuted" />
+            </VBox>
+
+            <Link text="Review all →" />
+          </HBox>
+
+          <HBox
+            items="{/suggested}"
+            class="soproleSuggestedProducts"
+            wrap="Wrap">
+
+            <items>
+              <VBox class="soproleMiniProductCard">
+
+                <VBox class="soproleMiniImageWrap">
+                  <Image
+                    src="{ImageUrl}"
+                    densityAware="false"
+                    class="soproleMiniProductImg" />
+
+                  <Text
+                    text="{Tag}"
+                    class="soproleMiniTag" />
+                </VBox>
+
+                <Text
+                  text="{Name}"
+                  maxLines="2"
+                  class="soproleMiniName" />
+
+                <Text
+                  text="Suggested {Suggested} EA"
+                  class="soproleMiniSuggested" />
+
+                <HBox
+                  justifyContent="SpaceBetween"
+                  alignItems="Center"
+                  class="soproleMiniBottom">
+
+                  <Text
+                    text="{path:'Price', formatter:'.formatMoney'}"
+                    class="soproleMiniPrice" />
+
+                  <Button
+                    icon="sap-icon://add"
+                    type="Emphasized"
+                    press=".onAdd"
+                    class="soproleMiniAddBtn" />
+
+                </HBox>
+
+              </VBox>
+            </items>
+          </HBox>
+
+        </VBox>
+
+        <!-- Footer -->
+        <HBox class="soproleFooter" justifyContent="SpaceBetween" wrap="Wrap">
+          <Text text="© 2026 Soprole S.A. · Wholesale Portal B2B" class="soproleMuted" />
+          <Text text="Omnichannel prototype · net prices + VAT 19%" class="soproleMuted" />
+        </HBox>
+
+      </VBox>
+
+    </content>
+  </Page>
+</mvc:View>

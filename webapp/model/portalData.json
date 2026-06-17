@@ -1,0 +1,102 @@
+{
+  "loyalty": {
+    "Points": "1.775",
+    "Tier": "Silver member",
+    "ToGoText": "~NZD 6.740,00 of orders to Gold",
+    "ToGoPoints": "8.425",
+    "Progress": 20,
+    "ExpiringPoints": "800",
+    "ExpiringDays": 12,
+    "ChallengeName": "Category Champion",
+    "ChallengePct": 60
+  },
+  "categories": [
+    { "Name": "Mundo Yoghurt", "Count": 78 },
+    { "Name": "Quesos & Especialidades", "Count": 49 },
+    { "Name": "Block Cheese", "Count": 29, "Group": true },
+    { "Name": "Shredded / Grated Cheese", "Count": 23 },
+    { "Name": "Functional Yoghurt", "Count": 21 },
+    { "Name": "Specialty Yellow Cheese", "Count": 21 },
+    { "Name": "UHT Flavoured Milk", "Count": 21 },
+    { "Name": "Fresh White Milk", "Count": 19 },
+    { "Name": "Mainstream Yoghurt", "Count": 19 },
+    { "Name": "Specialty White Mould Cheese", "Count": 16 },
+    { "Name": "Butter", "Count": 14 },
+    { "Name": "Premium / Gourmet Yoghurt", "Count": 14 },
+    { "Name": "Natural / Authentic Yoghurt", "Count": 12 },
+    { "Name": "Processed Cheese", "Count": 12 }
+  ],
+  "orders": [
+    { "OrderId": "SO-260611-0001", "Status": "submitted", "Lines": 2, "Total": 289.04, "Items": [
+      { "Id": "p1", "Name": "Aroha Sparkling Rhubarb 330mL", "Brand": "AROHA DRINKS", "Price": 20.24, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+      { "Id": "p2", "Name": "Barkers Patisserie Filling Blueberry 2.5kg", "Brand": "BARKERS", "Price": 20.24, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80" }
+    ] },
+    { "OrderId": "SO-260610-0005", "Status": "submitted", "Lines": 4, "Total": 344.18, "Items": [
+      { "Id": "p3", "Name": "Arepa Drink for Calm & Clarity 300mL", "Brand": "AREPA", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" },
+      { "Id": "p5", "Name": "Barkers Chutney Beetroot 1kg", "Brand": "BARKERS", "Price": 20.24, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1597370069125-5b3c5b6e3f80?auto=format&fit=crop&w=600&q=80" }
+    ] },
+    { "OrderId": "SO-260610-0004", "Status": "submitted", "Lines": 4, "Total": 117.58, "Items": [
+      { "Id": "b1", "Name": "ALPRO Barista Plant Based Almond 1L", "Brand": "ALPRO", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80" }
+    ] },
+    { "OrderId": "SO-260610-0003", "Status": "submitted", "Lines": 7, "Total": 258.86, "Items": [
+      { "Id": "b4", "Name": "Allganics Juice Apple Feijoa 275mL", "Brand": "ALLGANICS", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" },
+      { "Id": "b5", "Name": "Arepa Drink for Clarity 300mL", "Brand": "AREPA", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" }
+    ] }
+  ],
+  "campaigns": [
+    { "Color": "#DC2626", "Title": "Soprole Yoghurt Batido — stock your chillers for winter" },
+    { "Color": "#2563EB", "Title": "Quesos Soprole: Gouda & Mantecoso — up to 15% off wheels" },
+    { "Color": "#F59E0B", "Title": "Soprole Zero Lactosa & Next protein — fast-moving lines" },
+    { "Color": "#1E3A8A", "Title": "Manjar & postres Soprole — Food Service bulk packs" }
+  ],
+  "suggested": [
+    { "Id": "p1", "Name": "Aroha Sparkling Rhubarb 330mL", "Brand": "AROHA DRINKS", "Price": 20.24, "Qty": 1, "Tag": "Habitual", "Suggested": 12, "Discount": "", "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p2", "Name": "Barkers Patisserie Filling Blueberry 2.5kg", "Brand": "BARKERS", "Price": 20.24, "Qty": 1, "Tag": "Habitual", "Suggested": 6, "Discount": "", "ImageUrl": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p3", "Name": "Arepa Drink for Calm & Clarity 300mL", "Brand": "AREPA", "Price": 21.3, "Qty": 1, "Tag": "Habitual", "Suggested": 24, "Discount": "", "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p4", "Name": "Almighty Juice Organic Guava Lime Apple 300mL", "Brand": "ALMIGHTY", "Price": 21.3, "Qty": 1, "Tag": "Pruébalo", "Suggested": 4, "Discount": "", "ImageUrl": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p5", "Name": "Barkers Chutney Beetroot 1kg", "Brand": "BARKERS", "Price": 20.24, "Qty": 1, "Tag": "Habitual", "Suggested": 8, "Discount": "", "ImageUrl": "https://images.unsplash.com/photo-1597370069125-5b3c5b6e3f80?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p6", "Name": "ALPRO Barista Plant Based Almond 1L", "Brand": "ALPRO", "Price": 20.24, "Qty": 1, "Tag": "Nuevo", "Suggested": 6, "Discount": "", "ImageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80" }
+  ],
+  "featured": [
+    { "Id": "f1", "Name": "Better Eggs Free Range Mixed grade Dozen (12 un)", "Brand": "BETTER EGGS", "Price": 6.0, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f2", "Name": "Anathoth Jam Raspberry 1.25kg", "Brand": "ANATHOTH FARMS", "Price": 6.85, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1597528380136-78a4d2e74e3c?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f3", "Name": "Dilmah Iced Tea Lemon 330mL CAN", "Brand": "DILMAH", "Price": 7.7, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f4", "Name": "Shott Fruit Syrup Mango 1L", "Brand": "SHOTT BEVERAGES", "Price": 8.55, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f5", "Name": "'73 Citrus Sparkling 330mL", "Brand": "'73 CITRUS", "Price": 9.2, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f6", "Name": "Whittakers Dark Almond 250g", "Brand": "WHITTAKERS", "Price": 11.4, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1623660053975-cf75a8be0908?auto=format&fit=crop&w=600&q=80" }
+  ],
+  "bakery": [
+    { "Id": "b1", "Name": "ALPRO Barista Plant Based Almond 1L", "Brand": "ALPRO", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b2", "Name": "Aroha Sparkling Rhubarb 330mL", "Brand": "AROHA DRINKS", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b3", "Name": "Almighty Juice Organic Guava Lime Apple Bottle 300mL", "Brand": "ALMIGHTY", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b4", "Name": "Allganics Juice Apple Feijoa 275mL", "Brand": "ALLGANICS", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b5", "Name": "Arepa Drink for Clarity 300mL", "Brand": "AREPA", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" }
+  ],
+  "catalog": [
+    { "Id": "c1", "Name": "Anchor Functional Yoghurt 1kg", "Brand": "ANCHOR", "Price": 14.8, "Qty": 1, "Discount": "10+ -12%", "ImageUrl": "https://images.unsplash.com/photo-1571212515416-fef9b9d65f7d?auto=format&fit=crop&w=600&q=80", "Benefits": ["Earn 2× points", "Counts toward Yoghurt Champion", "Silver benefit · 5% off"] },
+    { "Id": "c2", "Name": "Anchor Processed Cheese Slices 500g", "Brand": "ANCHOR", "Price": 13.95, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "c3", "Name": "Mainland Snacking Cheese Edam 6pk", "Brand": "MAINLAND", "Price": 13.1, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=600&q=80", "Bulk": [{ "min": 6, "price": 12.45 }, { "min": 24, "price": 11.79 }] },
+    { "Id": "c4", "Name": "Anchor UHT Cream 1L", "Brand": "ANCHOR", "Price": 8.0, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "c5", "Name": "'73 Citrus Juice Sparkling Orange 330mL", "Brand": "'73 CITRUS", "Price": 9.2, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "c6", "Name": "'73 Citrus Lemon Lime & Bitters 330mL", "Brand": "'73 CITRUS", "Price": 9.2, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "c7", "Name": "'73 Citrus Pink Lemonade 330mL CAN", "Brand": "'73 CITRUS", "Price": 9.2, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "c8", "Name": "'73 Citrus Ruby Red Grapefruit 330mL CAN", "Brand": "'73 CITRUS", "Price": 9.2, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f1", "Name": "Better Eggs Free Range Mixed grade Dozen (12 un)", "Brand": "BETTER EGGS", "Price": 6.0, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f2", "Name": "Anathoth Jam Raspberry 1.25kg", "Brand": "ANATHOTH FARMS", "Price": 6.85, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1597528380136-78a4d2e74e3c?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f3", "Name": "Dilmah Iced Tea Lemon 330mL CAN", "Brand": "DILMAH", "Price": 7.7, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f4", "Name": "Shott Fruit Syrup Mango 1L", "Brand": "SHOTT BEVERAGES", "Price": 8.55, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f5", "Name": "'73 Citrus Sparkling 330mL", "Brand": "'73 CITRUS", "Price": 9.2, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "f6", "Name": "Whittakers Dark Almond 250g", "Brand": "WHITTAKERS", "Price": 11.4, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1623660053975-cf75a8be0908?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b1", "Name": "ALPRO Barista Plant Based Almond 1L", "Brand": "ALPRO", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b2", "Name": "Aroha Sparkling Rhubarb 330mL", "Brand": "AROHA DRINKS", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b3", "Name": "Almighty Juice Organic Guava Lime Apple Bottle 300mL", "Brand": "ALMIGHTY", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b4", "Name": "Allganics Juice Apple Feijoa 275mL", "Brand": "ALLGANICS", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "b5", "Name": "Arepa Drink for Clarity 300mL", "Brand": "AREPA", "Price": 21.3, "Qty": 1, "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p1", "Name": "Aroha Sparkling Rhubarb 330mL", "Brand": "AROHA DRINKS", "Price": 20.24, "Qty": 1, "Tag": "Habitual", "ImageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p2", "Name": "Barkers Patisserie Filling Blueberry 2.5kg", "Brand": "BARKERS", "Price": 20.24, "Qty": 1, "Tag": "Habitual", "ImageUrl": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p3", "Name": "Arepa Drink for Calm & Clarity 300mL", "Brand": "AREPA", "Price": 21.3, "Qty": 1, "Tag": "Habitual", "ImageUrl": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p4", "Name": "Almighty Juice Organic Guava Lime Apple 300mL", "Brand": "ALMIGHTY", "Price": 21.3, "Qty": 1, "Tag": "Pruébalo", "ImageUrl": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p5", "Name": "Barkers Chutney Beetroot 1kg", "Brand": "BARKERS", "Price": 20.24, "Qty": 1, "Tag": "Habitual", "ImageUrl": "https://images.unsplash.com/photo-1597370069125-5b3c5b6e3f80?auto=format&fit=crop&w=600&q=80" },
+    { "Id": "p6", "Name": "ALPRO Barista Plant Based Almond 1L", "Brand": "ALPRO", "Price": 20.24, "Qty": 1, "Tag": "Nuevo", "ImageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80" }
+  ]
+}

@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f">
+  <HBox class="soproleHeader" alignItems="Center" justifyContent="SpaceBetween">
+    <HBox alignItems="Center" class="soproleHeaderLeft">
+      <Button text="S" class="soproleLogoBadge" press=".onNavHome" />
+      <VBox class="soproleLogoText">
+        <Text text="Soprole" class="soproleLogo2" />
+        <Text text="WHOLESALE PORTAL" class="soproleLogoKick" />
+      </VBox>
+    </HBox>
+    <SearchField placeholder="Search products, SKU..." liveChange=".onSearch" search=".onSearch" class="soproleHeaderSearch" />
+    <HBox alignItems="Center" class="soproleHeaderRight">
+      <HBox alignItems="Center" class="soproleOrderingFor">
+        <core:Icon src="sap-icon://retail-store" class="soproleStoreIcon" />
+        <VBox>
+          <Text text="ORDERING FOR" class="soproleOrderingKick" />
+          <Text text="La Nonna — Britomart" class="soproleOrderingVal" />
+        </VBox>
+        <core:Icon src="sap-icon://slim-arrow-down" class="soproleMuted" />
+      </HBox>
+      <Button icon="sap-icon://bell" type="Transparent" class="soproleBell" tooltip="13 notificaciones" />
+      <Button icon="sap-icon://cart" text="{= ${cart>/count} > 0 ? ${cart>/count} : '' }" type="Emphasized" press=".onOpenCart" class="soproleCartBtn" />
+      <HBox alignItems="Center" class="soproleAccount">
+        <Avatar initials="AB" displaySize="XS" backgroundColor="Accent10" class="soproleAvatar" />
+        <VBox class="soproleAccountText">
+          <Text text="Allpress La Nonna Italia..." class="soproleAccountName" maxLines="1" />
+          <Text text="Customer 14010343" class="soproleAccountSub" />
+        </VBox>
+      </HBox>
+    </HBox>
+  </HBox>
+</core:FragmentDefinition>

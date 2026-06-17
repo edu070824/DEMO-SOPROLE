@@ -1,0 +1,130 @@
+{
+  "_version": "1.85.0",
+  "sap.app": {
+    "id": "soprole.portal",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.26.0",
+      "toolsId": "6d82553d-55e5-42dd-9042-3ff1f7896066"
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "soprolePortal-display": {
+          "semanticObject": "SoprolePortal",
+          "action": "display",
+          "title": "{{appTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "sap-icon://retail-store"
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.149.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "soprole.portal.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "soprole.portal.view",
+        "async": true,
+        "viewPath": "soprole.portal.view"
+      },
+      "routes": [
+        {
+          "name": "RouteHome",
+          "pattern": "",
+          "target": [
+            "TargetHome"
+          ]
+        },
+        {
+          "name": "RouteCatalog",
+          "pattern": "catalog",
+          "target": [
+            "TargetCatalog"
+          ]
+        },
+        {
+          "name": "RouteCart",
+          "pattern": "cart",
+          "target": [
+            "TargetCart"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetHome": {
+          "id": "Home",
+          "name": "Home"
+        },
+        "TargetCatalog": {
+          "id": "Catalog",
+          "name": "Catalog"
+        },
+        "TargetCart": {
+          "id": "Cart",
+          "name": "Cart"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "soprole.portal.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

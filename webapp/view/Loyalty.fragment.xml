@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+  <Dialog title="My Loyalty" contentWidth="26rem" class="soproleLoyDlg" binding="{/loyalty}">
+    <VBox>
+      <HBox justifyContent="SpaceBetween" alignItems="Baseline" class="soproleLoyRow">
+        <Text text="Points" class="soproleMuted" /><Text text="{Points}" class="soproleMutedStrong" />
+      </HBox>
+      <HBox justifyContent="SpaceBetween" alignItems="Baseline" class="soproleLoyRow">
+        <Text text="Tier" class="soproleMuted" /><Text text="{Tier}" class="soproleMutedStrong" />
+      </HBox>
+      <HBox justifyContent="SpaceBetween" alignItems="Baseline" class="soproleLoyRow">
+        <Text text="To reach Gold" class="soproleMuted" /><Text text="{ToGoPoints} pts" class="soproleMutedStrong" />
+      </HBox>
+      <ProgressIndicator percentValue="{Progress}" showValue="true" displayValue="{Progress}%" class="soproleGoldBar" height="0.7rem" />
+      <HBox class="soproleLoyaltyExpire" alignItems="Center">
+        <Text text="{ExpiringPoints} points" class="soproleMutedStrong" />
+        <Text text="expire in {ExpiringDays} days." class="soproleMuted" />
+      </HBox>
+      <HBox justifyContent="SpaceBetween" alignItems="Center" class="soproleLoyRow">
+        <Text text="Challenge · {ChallengeName}" class="soproleMutedStrong" /><Text text="{ChallengePct}%" class="soproleMuted" />
+      </HBox>
+      <ProgressIndicator percentValue="{ChallengePct}" showValue="false" class="soproleVioletBar" height="0.6rem" />
+    </VBox>
+    <beginButton><Button text="Close" press=".onCloseLoyalty" /></beginButton>
+  </Dialog>
+</core:FragmentDefinition>

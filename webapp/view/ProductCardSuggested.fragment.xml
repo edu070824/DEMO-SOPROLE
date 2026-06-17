@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+  <VBox class="soproleProductCard">
+    <VBox class="soproleImgWrap">
+      <Label text="Habitual" class="soproleTagChip soproleTagHabitual" visible="{= ${Tag} === 'Habitual' }" />
+      <Label text="Pruébalo" class="soproleTagChip soproleTagPruebalo" visible="{= ${Tag} === 'Pruébalo' }" />
+      <Label text="Nuevo" class="soproleTagChip soproleTagNuevo" visible="{= ${Tag} === 'Nuevo' }" />
+      <Image src="{ImageUrl}" class="soproleProductImg" densityAware="false" />
+    </VBox>
+    <Text text="{Brand}" class="soproleProductBrand" />
+    <Text text="{Name}" maxLines="2" class="soproleProductName" />
+    <Text text="{path: 'Suggested', formatter: '.formatter.suggestedEA'}" visible="{= ${Suggested} > 0 }" class="soproleMuted soproleSuggEA" />
+    <HBox justifyContent="SpaceBetween" alignItems="End" class="soproleProductFoot">
+      <Text text="{path: 'Price', formatter: '.formatter.price'}" class="soprolePrice" />
+      <Button icon="sap-icon://add" type="Emphasized" class="soproleAddRound" press=".onAdd" tooltip="Agregar" />
+    </HBox>
+  </VBox>
+</core:FragmentDefinition>

@@ -1,0 +1,841 @@
+:root {
+  --soprole-red: #C8202E;
+  --soprole-red-deep: #9b1818;
+  --soprole-red-mid: #c01919;
+  --soprole-red-dark: #7a0f0f;
+  --soprole-gold: #C9A227;
+  --soprole-gold-soft: rgba(201, 162, 39, 0.16);
+  --soprole-navy: #1E3A8A;
+  --soprole-violet: #8b5cf6;
+  --soprole-sky: #0ea5e9;
+  --soprole-orange: #f97316;
+  --soprole-ink: #1a1a1a;
+  --soprole-muted: #6b7280;
+  --soprole-bg: #f6f6f4;
+  --soprole-card: #ffffff;
+  --soprole-border: #e7e7e3;
+  --soprole-accent: #fdeaec;
+  --soprole-radius: 1rem;
+}
+.soprolePage .sapMPageBgSolid, .soprolePage section { background: var(--soprole-bg); }
+
+.soproleNotice { background: var(--soprole-ink); padding: 0.4rem 1rem; gap: 0.6rem; }
+.soproleNotice .sapMText, .soproleNotice .sapMLnk { color: #fff !important; font-size: 0.8125rem; }
+.soproleNoticeIcon { color: #fff; font-size: 0.95rem; }
+.soproleNoticeLink { text-decoration: underline; font-weight: 600; }
+
+.soproleHeader { background: rgba(255,255,255,0.96); border-bottom: 1px solid var(--soprole-border); padding: 0.6rem 1.5rem; gap: 1rem; }
+.soproleHeaderLeft { gap: 0.6rem; }
+.soproleLogoBadge.sapMBtn { min-width: 2.25rem; width: 2.25rem; height: 2.25rem; border-radius: 999px; background: var(--soprole-red); color: #fff; font-weight: 800; }
+.soproleLogoBadge .sapMBtnInner { background: var(--soprole-red); border-color: var(--soprole-red); border-radius: 999px; }
+.soproleLogoBadge .sapMBtnContent { color: #fff; }
+.soproleLogo2 { color: var(--soprole-red); font-weight: 700; font-size: 1rem; }
+.soproleLogoKick { font-size: 0.6rem; letter-spacing: 0.18em; color: var(--soprole-muted); font-weight: 700; }
+.soproleHeaderSearch { flex: 1; max-width: 46rem; }
+.soproleHeaderRight { gap: 0.6rem; }
+.soproleOrderingFor { gap: 0.5rem; border: 1px solid var(--soprole-border); border-radius: 999px; padding: 0.25rem 0.75rem; }
+.soproleStoreIcon { color: var(--soprole-red); }
+.soproleOrderingKick { font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--soprole-muted); font-weight: 700; }
+.soproleOrderingVal { font-size: 0.8rem; font-weight: 600; }
+.soproleCartBtn.sapMBtn { border-radius: 999px; }
+.soproleAccount { gap: 0.4rem; padding-left: 0.6rem; border-left: 1px solid var(--soprole-border); }
+.soproleAccountName { font-size: 0.8rem; font-weight: 700; max-width: 11rem; }
+.soproleAccountSub { font-size: 0.68rem; color: var(--soprole-muted); }
+
+.soproleBlueprint { gap: 0.25rem; background: var(--soprole-accent); border-radius: 999px; padding: 0.1rem 0.55rem; margin-inline-start: 0.5rem; }
+.soproleBlueprint .sapMText { font-size: 0.66rem; font-weight: 600; color: var(--soprole-red); }
+.soproleBpIcon { font-size: 0.7rem; color: var(--soprole-red); }
+
+.soproleBody { padding: 1.5rem; gap: 1.5rem; max-width: 1480px; margin: 0 auto; box-sizing: border-box; width: 100%; }
+.soproleCatalogBody { gap: 1rem; }
+.soproleSidebar { width: 16.25rem; flex: 0 0 16.25rem; background: #fff; border: 1px solid var(--soprole-border); border-radius: var(--soprole-radius); padding: 1rem; box-sizing: border-box; }
+.soproleMain { min-width: 0; gap: 1.5rem; }
+.soproleMain > * { margin-bottom: 1.5rem; }
+.soproleCard { background: var(--soprole-card); border: 1px solid var(--soprole-border); border-radius: var(--soprole-radius); padding: 1.25rem; box-sizing: border-box; }
+
+.soproleSideKicker { color: var(--soprole-muted); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; margin-bottom: 0.6rem; display: block; }
+.soproleSideNav { gap: 0.15rem; margin-bottom: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--soprole-border); }
+.soproleNavItem { gap: 0.5rem; border-radius: 0.5rem; padding: 0.4rem 0.6rem; }
+.soproleNavItem .sapMLnk { color: var(--soprole-ink); font-weight: 600; font-size: 0.85rem; }
+.soproleNavIcon { color: var(--soprole-muted); font-size: 0.9rem; }
+.soproleNavActive { background: var(--soprole-accent); }
+.soproleNavActive .sapMLnk, .soproleNavActive .soproleNavIcon { color: var(--soprole-red) !important; }
+.soproleCatList .sapMLIB { padding-inline: 0.3rem; }
+.soproleCatList .sapMSLITitleOnly .sapMSLITitle { font-size: 0.82rem; }
+
+.soproleKickRow { gap: 0.35rem; }
+.soproleKickIcon { font-size: 0.7rem; color: var(--soprole-red); }
+.soproleEyebrow, .soproleKicker { color: var(--soprole-red); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.soproleHeading { gap: 0.4rem; }
+.soproleH1 .sapMTitle, .soproleH1 { font-size: 2.6rem !important; font-weight: 700; letter-spacing: -0.02em; }
+.soproleLead { color: var(--soprole-muted); }
+.soproleSectionHead { margin-bottom: 1rem; }
+.soproleSectionTitle .sapMTitle, .soproleSectionTitle { font-size: 1.4rem !important; font-weight: 700; }
+.soproleHeadActions { gap: 0.75rem; }
+
+.soproleLoyalty { border-left: 6px solid var(--soprole-gold); }
+.soproleLoyaltyTop { gap: 1rem; }
+.soproleLoyaltyIcon { color: var(--soprole-gold); font-size: 1.5rem; background: var(--soprole-gold-soft); padding: 0.75rem; border-radius: 0.75rem; }
+.soproleLoyaltyNum { font-size: 1.9rem; font-weight: 700; }
+.soproleLoyaltyUnit { color: var(--soprole-muted); margin-inline-start: 0.4rem; }
+.soproleTierChip .sapMObjStatusText { background: var(--soprole-gold-soft); color: #7a5b00; padding: 0.15rem 0.7rem; border-radius: 999px; font-weight: 600; font-size: 0.78rem; }
+.soproleLoyaltyBarWrap { flex: 1; min-width: 16rem; gap: 0.3rem; }
+.soproleGoldBar .sapMPIBar { background: linear-gradient(90deg, var(--soprole-gold), #f5b942) !important; }
+.soproleVioletBar .sapMPIBar { background: var(--soprole-violet) !important; }
+.soproleLoyaltyExpire { background: var(--soprole-gold-soft); border-radius: 0.6rem; padding: 0.5rem 0.75rem; margin-top: 0.9rem; gap: 0.4rem; }
+.soproleChallenge { margin-top: 0.9rem; gap: 0.6rem; }
+.soproleChallengeIcon { color: var(--soprole-red); }
+.soproleMuted { color: var(--soprole-muted); font-size: 0.85rem; }
+.soproleMutedStrong { color: var(--soprole-ink); font-size: 0.85rem; font-weight: 600; }
+
+.soproleCampaign { background: linear-gradient(135deg, var(--soprole-red-deep), var(--soprole-red-mid) 55%, var(--soprole-red-dark)); color: #fff; border-radius: var(--soprole-radius); padding: 2.25rem; gap: 0.75rem; min-height: 190px; }
+.soproleCampaignTitle .sapMTitle, .soproleCampaignTitle { color: #fff !important; font-size: 2.2rem !important; font-weight: 700; }
+.soproleCampaignText { color: rgba(255,255,255,0.9); max-width: 34rem; }
+.soproleCampaignBtn.sapMBtn { border-radius: 999px; margin-top: 0.6rem; align-self: flex-start; }
+.soproleCampaignBtn .sapMBtnInner { background: #fff; border-color: #fff; }
+.soproleCampaignBtn .sapMBtnContent, .soproleCampaignBtn .sapUiIcon { color: var(--soprole-red) !important; }
+
+.soproleProductGrid { width: 100%; }
+.soproleProductCard { background: #fff; border: 1px solid var(--soprole-border); border-radius: 0.85rem; padding: 0; gap: 0; height: 100%; box-sizing: border-box; overflow: hidden; }
+.soproleProductCard:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+.soproleImgWrap { position: relative; width: 100%; }
+.soproleProductImg { width: 100%; height: 6rem; object-fit: cover; background: #f1f1ee; display: block; }
+.soproleTagChip { position: absolute; top: 0.5rem; left: 0.5rem; z-index: 2; border-radius: 999px; padding: 0.1rem 0.55rem; font-size: 0.62rem; font-weight: 700; }
+.soproleTagHabitual { background: var(--soprole-red); color: #fff; }
+.soproleTagPruebalo { background: var(--soprole-gold); color: #3b2a00; }
+.soproleTagNuevo { background: var(--soprole-sky); color: #fff; }
+.soproleDiscChip { background: var(--soprole-orange); color: #fff; }
+.soproleProductCard > .sapMText, .soproleProductCard > .sapMHBox, .soproleProductCard > .sapMVBox { padding-inline: 0.7rem; }
+.soproleProductBrand { font-size: 0.62rem; color: var(--soprole-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.6rem; }
+.soproleProductName { font-size: 0.78rem; font-weight: 600; line-height: 1.15; margin-top: 0.2rem; min-height: 2.1rem; }
+.soproleSuggEA { margin-top: 0.15rem; font-size: 0.72rem; }
+.soprolePriceRow { margin-top: 0.4rem; gap: 0.15rem; }
+.soprolePrice { font-weight: 700; font-size: 1.05rem; }
+.soproleUnit { font-size: 0.7rem; }
+.soproleProductFoot { padding: 0.6rem 0.7rem 0.7rem; margin-top: auto; }
+.soproleFullFoot { gap: 0.4rem; }
+.soproleAddRound.sapMBtn { min-width: 2.1rem; border-radius: 999px; }
+.soproleAddDark.sapMBtn { flex: 1; border-radius: 999px; }
+.soproleAddDark .sapMBtnInner { background: var(--soprole-ink); border-color: var(--soprole-ink); border-radius: 999px; }
+.soproleAddDark .sapMBtnContent, .soproleAddDark .sapUiIcon { color: #fff !important; }
+
+.soproleQtyStepper { border: 1px solid var(--soprole-border); border-radius: 0.5rem; overflow: hidden; }
+.soproleStepBtn.sapMBtn { min-width: 1.9rem; border-radius: 0; }
+.soproleQtyVal { min-width: 1.5rem; text-align: center; font-weight: 600; font-size: 0.8rem; }
+
+.soproleBulkRow { gap: 0.3rem; padding: 0 0.7rem; margin-top: 0.3rem; }
+.soproleBulkChip { border: 1px solid var(--soprole-border); border-radius: 0.4rem; padding: 0.1rem 0.4rem; font-size: 0.66rem; }
+.soproleBenefits { padding: 0 0.7rem; margin-top: 0.3rem; gap: 0.1rem; }
+.soproleBenefit1 .sapMText, .soproleBenefit1 { font-size: 0.66rem; color: #8a6a00; }
+.soproleBenefit2 .sapMText, .soproleBenefit2 { font-size: 0.66rem; color: var(--soprole-red); }
+.soproleBenefit3 .sapMText, .soproleBenefit3 { font-size: 0.66rem; color: #15803d; }
+
+.soproleTwoCol { gap: 1.25rem; }
+.soproleCol { min-width: 20rem; }
+.soproleOrderId { font-weight: 600; }
+.soproleOrderRow { width: 100%; padding: 0.35rem 0; }
+.soproleCampaignList .sapMSLITitle { font-size: 0.82rem; }
+
+.soproleBakeryBanner { background: var(--soprole-navy); border-radius: 0.75rem; padding: 0.85rem 1.25rem; margin-bottom: 0.9rem; gap: 0.5rem; }
+.soproleBakeryText { color: #fff; font-size: 0.85rem; }
+.soproleBakeryLink { color: #fff !important; font-weight: 600; }
+
+.soproleBreadcrumb { gap: 0.4rem; padding: 0 0.25rem; }
+.soproleSortBox { gap: 0.6rem; }
+
+.soproleFooter { border-top: 1px solid var(--soprole-border); padding-top: 1rem; margin-top: 0.5rem; gap: 0.5rem; }
+
+.soproleCartRow { width: 100%; padding: 0.4rem 0; gap: 0.5rem; }
+.soproleCartInfo { gap: 0.1rem; min-width: 0; flex: 1; }
+.soproleCartName { font-weight: 600; font-size: 0.85rem; }
+
+@media (max-width: 1024px) {
+  .soproleSidebar { flex: 1 1 100%; width: 100%; }
+  .soproleH1 .sapMTitle, .soproleH1 { font-size: 2rem !important; }
+}
+
+/* ===== Ajustes v2: tarjetas + carrito + loyalty + list mode ===== */
+.soproleProductImg { height: 5.5rem; }
+.soproleProductName { min-height: 2rem; }
+.soproleProductFoot { padding: 0.5rem 0.7rem 0.65rem; }
+.soprolePrice { font-size: 0.98rem; }
+.soproleSuggEA { font-size: 0.7rem; }
+
+.soproleCartDialog .sapMDialogScrollCont { padding: 0.5rem 0.75rem; }
+.soproleCartRow { border: 1px solid var(--soprole-border); border-radius: 0.6rem; padding: 0.6rem 0.75rem; margin-bottom: 0.5rem; }
+
+.soproleLoyDlg .sapMDialogScrollCont { padding: 1rem 1.25rem; }
+.soproleLoyRow { padding: 0.4rem 0; }
+
+.soproleListImg { width: 3.25rem; height: 3.25rem; border-radius: 0.5rem; object-fit: cover; background: #f1f1ee; }
+.soproleListRow { width: 100%; gap: 0.75rem; padding: 0.5rem 0; }
+.soproleListInfo { gap: 0.1rem; min-width: 0; flex: 1; }
+
+/* =========================
+   CARRITO POPUP - MEJORA VISUAL
+   ========================= */
+
+.soproleCartDialog .sapMDialog {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.soproleCartDialog .sapMDialogTitle {
+  font-weight: 800;
+  color: #111827;
+}
+
+.soproleCartDialogBody {
+  padding: 0;
+  background: #ffffff;
+}
+
+.soproleCartList {
+  padding: 0;
+}
+
+.soproleCartList .sapMLIB {
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: none;
+}
+
+.soproleCartRow {
+  min-height: 7rem;
+  padding: 1rem 1.2rem;
+  gap: 1rem;
+  border: none !important;
+  border-radius: 0 !important;
+  background: #ffffff;
+}
+
+.soproleCartImage {
+  width: 5rem !important;
+  height: 5rem !important;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f1f5f9;
+  flex-shrink: 0;
+}
+
+.soproleCartInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.soproleCartName {
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.soproleProductBrand {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #7c8798;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.soproleMuted {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.soproleCartRemoveBtn {
+  margin-top: 0.3rem;
+  padding-left: 0;
+}
+
+.soproleCartRemoveBtn .sapMBtnInner {
+  border: none !important;
+  background: transparent !important;
+  color: #64748b !important;
+  font-size: 0.8rem;
+}
+
+.soproleQtyStepper {
+  width: 7.5rem;
+  height: 2.8rem;
+  border: 1px solid #dbe3ee;
+  border-radius: 999px;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.soproleStepBtn {
+  min-width: 2rem;
+}
+
+.soproleStepBtn .sapMBtnInner {
+  border-radius: 999px !important;
+  border-color: #dbe3ee !important;
+  background: #ffffff !important;
+}
+
+.soproleQtyVal {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #111827;
+  min-width: 1.2rem;
+  text-align: center;
+}
+
+.soproleCartLineTotal {
+  width: 6.5rem;
+  text-align: right;
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #111827;
+  flex-shrink: 0;
+}
+
+.soproleCartDialogSummary {
+  padding: 1rem 1.2rem;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.soproleCartTotalBig {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #111827;
+}
+
+/* Botón confirmar más parecido al rojo de Soprole */
+.soproleCartDialog .sapMBtnEmphasized .sapMBtnInner {
+  background: #ed1c24 !important;
+  border-color: #ed1c24 !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  font-weight: 800;
+}
+
+/* =========================
+   CART PAGE - SOPROLE STYLE
+   ========================= */
+
+.soproleCartPage {
+  background: #f7f9fc;
+}
+
+.soproleCartPageBody {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
+}
+
+.soproleCartHeaderRow {
+  margin-bottom: 2.5rem;
+}
+
+.soproleCartPageTitle {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #18202c;
+  margin-right: 0.8rem;
+}
+
+.soproleCartContent {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Panel izquierdo */
+.soproleCartProductsPanel {
+  flex: 1 1 690px;
+  background: #ffffff;
+  border: 1px solid #dde4ee;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.soproleCartPageList {
+  background: transparent;
+}
+
+.soproleCartPageList .sapMLIB {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.soproleCartPageRow {
+  min-height: 112px;
+  padding: 1rem 1.25rem;
+  gap: 1rem;
+  background: #ffffff;
+}
+
+.soproleCartPageImg {
+  width: 76px !important;
+  height: 76px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f0f3f8;
+  flex-shrink: 0;
+}
+
+.soproleCartPageInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.soproleCartPageBrand {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #7c8798;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.soproleCartPageName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.35rem;
+}
+
+.soproleCartPageRemove {
+  height: 1.5rem;
+  margin-left: 0.4rem;
+  color: #6b7280;
+}
+
+.soproleCartPageQty {
+  width: 118px;
+  height: 44px;
+  border: 1px solid #dce3ee;
+  border-radius: 999px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.soproleCartPageQty .sapMBtn {
+  min-width: 32px;
+}
+
+.soproleCartPageLineTotal {
+  width: 130px;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #111827;
+  font-family: Georgia, "Times New Roman", serif;
+  flex-shrink: 0;
+}
+
+/* Panel derecho */
+.soproleCartSummaryPanel {
+  flex: 0 0 330px;
+  background: #ffffff;
+  border: 1px solid #dde4ee;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.soproleCartSummaryTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.soproleSummaryLine {
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.soproleOrangeText {
+  color: #c96f05;
+  font-weight: 700;
+}
+
+.soproleCouponRow {
+  gap: 0.5rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.soproleCouponRow .sapMInputBase {
+  flex: 1;
+}
+
+.soproleCartTotalRow {
+  border-top: 1px solid #dce3ee;
+  margin-top: 1rem;
+  padding-top: 1.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.soproleRewardBox {
+  background: #fff4d8;
+  border: 1px solid #f3ce81;
+  color: #7a4c08;
+  border-radius: 10px;
+  padding: 0.8rem;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.soproleCheckoutBtn {
+  width: 100%;
+  height: 50px;
+  border-radius: 999px;
+  margin-top: 0.6rem;
+}
+
+.soproleCheckoutBtn .sapMBtnInner {
+  background: #ed1c24 !important;
+  border-color: #ed1c24 !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  font-weight: 800;
+}
+
+.soproleSaveListBtn {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #dce3ee;
+  border-radius: 999px;
+  margin-top: 0.8rem;
+}
+
+.soproleCartLinks {
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.soproleClearCartBtn {
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .soproleCartContent {
+    flex-direction: column;
+  }
+
+  .soproleCartSummaryPanel {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
+/* =========================
+   CART - SUGGESTED PRODUCTS
+   ========================= */
+
+.soproleSuggestedCartBox {
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  background: #ffffff;
+  border: 1px solid #dde4ee;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.soproleSuggestedHeader {
+  margin-bottom: 1.3rem;
+}
+
+.soproleSuggestedMiniTitle {
+  color: #ed1c24;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.35rem;
+}
+
+.soproleSuggestedTitle {
+  margin-right: 0.7rem;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.soproleSuggestedProducts {
+  gap: 0.9rem;
+}
+
+.soproleMiniProductCard {
+  position: relative;
+  width: 145px;
+  min-height: 235px;
+  border: 1px solid #e1e7ef;
+  border-radius: 10px;
+  padding: 0.7rem;
+  background: #ffffff;
+}
+
+.soproleMiniProductImg {
+  width: 100%;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f3f5f8;
+  margin-bottom: 0.6rem;
+}
+
+.soproleMiniTag {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  background: #ed1c24;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.soproleMiniName {
+  font-weight: 700;
+  color: #1f2937;
+  min-height: 40px;
+  line-height: 1.2;
+}
+
+.soproleMiniSuggested {
+  margin-top: 0.4rem;
+  color: #7c8798;
+  font-size: 0.78rem;
+}
+
+.soproleMiniPrice {
+  font-size: 1.05rem;
+  font-weight: 900;
+  margin-top: 0.55rem;
+  color: #111827;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.soproleMiniAddBtn {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  border-radius: 10px;
+}
+
+.soproleMiniAddBtn .sapMBtnInner {
+  background: #ed1c24 !important;
+  border-color: #ed1c24 !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+}
+
+/* =========================
+   FIX FINAL - SUGERIDOS CARRITO
+   ========================= */
+
+.soproleMiniProductCard {
+  position: relative !important;
+  width: 145px !important;
+  height: 245px !important;
+  min-height: 245px !important;
+  border: 1px solid #e1e7ef;
+  border-radius: 10px;
+  padding: 0.7rem !important;
+  padding-bottom: 3rem !important;
+  background: #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.soproleMiniProductImg {
+  width: 100% !important;
+  height: 95px !important;
+  object-fit: cover !important;
+  border-radius: 8px;
+  background: #f3f5f8;
+  margin-bottom: 0.65rem !important;
+  display: block;
+}
+
+/* Badge rojo arriba sobre la imagen */
+.soproleMiniTag {
+  position: absolute !important;
+  top: 1rem !important;
+  left: 1rem !important;
+  z-index: 10 !important;
+  display: inline-block !important;
+  width: auto !important;
+  max-width: 80px !important;
+  background: #ed1c24 !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  padding: 0.18rem 0.55rem !important;
+  font-size: 0.68rem !important;
+  font-weight: 800 !important;
+  line-height: 1rem !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+}
+
+/* Nombre debajo de la imagen */
+.soproleMiniName {
+  display: block !important;
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  color: #1f2937 !important;
+  line-height: 1.15 !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  overflow: hidden !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.35rem !important;
+}
+
+/* Texto suggested */
+.soproleMiniSuggested {
+  display: block !important;
+  color: #7c8798 !important;
+  font-size: 0.76rem !important;
+  line-height: 1rem !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+/* Precio abajo */
+.soproleMiniPrice {
+  display: block !important;
+  font-size: 1.05rem !important;
+  font-weight: 900 !important;
+  color: #111827 !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Botón rojo + */
+.soproleMiniAddBtn {
+  position: absolute !important;
+  right: 0.6rem !important;
+  bottom: 0.6rem !important;
+  z-index: 8 !important;
+  border-radius: 10px !important;
+}
+
+.soproleMiniAddBtn .sapMBtnInner {
+  background: #ed1c24 !important;
+  border-color: #ed1c24 !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  min-width: 2rem !important;
+}
+
+.soproleMiniAddBtn .sapUiIcon {
+  color: #ffffff !important;
+}
+
+/* =========================
+   FIX DEFINITIVO SUGERIDOS
+   ========================= */
+
+.soproleMiniProductCard {
+  width: 145px !important;
+  height: 235px !important;
+  min-height: 235px !important;
+  padding: 0.7rem !important;
+  border: 1px solid #e1e7ef !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.soproleMiniImageWrap {
+  position: relative !important;
+  width: 100% !important;
+  height: 95px !important;
+  margin-bottom: 0.65rem !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
+  background: #f3f5f8 !important;
+}
+
+.soproleMiniProductImg {
+  width: 100% !important;
+  height: 95px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+.soproleMiniTag {
+  position: absolute !important;
+  top: 0.45rem !important;
+  left: 0.45rem !important;
+  z-index: 5 !important;
+  background: #ed1c24 !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  padding: 0.15rem 0.5rem !important;
+  font-size: 0.65rem !important;
+  font-weight: 800 !important;
+  line-height: 1rem !important;
+  white-space: nowrap !important;
+  max-width: 85px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.soproleMiniName {
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  color: #1f2937 !important;
+  line-height: 1.15 !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  overflow: hidden !important;
+  margin: 0 0 0.35rem 0 !important;
+}
+
+.soproleMiniSuggested {
+  color: #7c8798 !important;
+  font-size: 0.76rem !important;
+  line-height: 1rem !important;
+  margin: 0 0 0.45rem 0 !important;
+}
+
+.soproleMiniBottom {
+  margin-top: auto !important;
+  width: 100% !important;
+}
+
+.soproleMiniPrice {
+  font-size: 1.05rem !important;
+  font-weight: 900 !important;
+  color: #111827 !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  margin: 0 !important;
+}
+
+.soproleMiniAddBtn {
+  position: static !important;
+  min-width: 2.1rem !important;
+  width: 2.1rem !important;
+  height: 2.1rem !important;
+  border-radius: 10px !important;
+  margin-left: 0.4rem !important;
+}
+
+.soproleMiniAddBtn .sapMBtnInner {
+  background: #ed1c24 !important;
+  border-color: #ed1c24 !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  min-width: 2.1rem !important;
+}
+
+.soproleMiniAddBtn .sapUiIcon {
+  color: #ffffff !important;
+}

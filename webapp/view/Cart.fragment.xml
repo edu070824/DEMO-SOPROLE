@@ -1,0 +1,131 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+  <Dialog
+    title="Tu carrito"
+    contentWidth="50rem"
+    contentHeight="34rem"
+    verticalScrolling="true"
+    stretchOnPhone="true"
+    class="soproleCartDialog">
+
+    <VBox class="soproleCartDialogBody">
+
+      <List
+        items="{cart>/items}"
+        noDataText="Tu carrito está vacío"
+        showSeparators="Inner"
+        class="soproleCartList">
+
+        <CustomListItem>
+          <HBox
+            justifyContent="SpaceBetween"
+            alignItems="Center"
+            class="soproleCartRow">
+
+            <!-- Imagen del producto -->
+            <Image
+              src="{cart>ImageUrl}"
+              width="5rem"
+              height="5rem"
+              densityAware="false"
+              class="soproleCartImage" />
+
+            <!-- Información del producto -->
+            <VBox class="soproleCartInfo">
+              <Text
+                text="{cart>Brand}"
+                class="soproleProductBrand" />
+
+              <Text
+                text="{cart>Name}"
+                class="soproleCartName"
+                maxLines="2" />
+
+              <HBox alignItems="Center">
+                <Text
+                  text="NZD {cart>Price}"
+                  class="soproleMuted" />
+                <Text
+                  text=" · EA"
+                  class="soproleMuted" />
+              </HBox>
+
+              <Button
+                text="Remove"
+                icon="sap-icon://delete"
+                type="Transparent"
+                press=".onCartRemove"
+                class="soproleCartRemoveBtn" />
+            </VBox>
+
+            <!-- Cantidad -->
+            <HBox
+              alignItems="Center"
+              justifyContent="Center"
+              class="soproleQtyStepper">
+
+              <Button
+                icon="sap-icon://less"
+                press=".onCartMinus"
+                class="soproleStepBtn" />
+
+              <Text
+                text="{cart>Qty}"
+                class="soproleQtyVal" />
+
+              <Button
+                icon="sap-icon://add"
+                press=".onCartPlus"
+                class="soproleStepBtn" />
+            </HBox>
+
+            <!-- Total por línea -->
+            <Text
+              text="{ parts: ['cart>Price','cart>Qty'], formatter: '.formatter.lineTotal' }"
+              class="soproleCartLineTotal" />
+
+          </HBox>
+        </CustomListItem>
+      </List>
+
+      <!-- Resumen simple abajo -->
+      <HBox
+        justifyContent="SpaceBetween"
+        alignItems="Center"
+        class="soproleCartDialogSummary">
+
+        <VBox>
+          <Text
+            text="Total del carrito"
+            class="soproleMuted" />
+
+          <Text
+            text="Incluye productos agregados desde el catálogo"
+            class="soproleMuted" />
+        </VBox>
+
+        <Text
+          text="NZD {cart>/total}"
+          class="soproleCartTotalBig" />
+      </HBox>
+
+    </VBox>
+
+    <beginButton>
+      <Button
+        text="Cerrar"
+        press=".onCloseCart" />
+    </beginButton>
+
+    <endButton>
+      <Button
+        text="Confirmar · NZD {cart>/total}"
+        type="Emphasized"
+        enabled="{= !${cart>/empty} }"
+        press=".onCheckout" />
+    </endButton>
+
+  </Dialog>
+</core:FragmentDefinition>
