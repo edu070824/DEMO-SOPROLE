@@ -52,7 +52,10 @@
             </HBox>
 
             <f:GridContainer id="catalogGrid" class="soproleProductGrid" items="{/catalog}" visible="{= ${view>/catView} !== 'list' }">
-              <f:layout><f:GridContainerSettings rowSize="18rem" columnSize="10.5rem" gap="0.85rem" /></f:layout>
+              <f:layout><f:layout><f:GridContainerSettings
+  rowSize="16rem"
+  columnSize="13rem"
+  gap="1rem" /></f:layout></f:layout>
               <core:Fragment fragmentName="soprole.portal.view.ProductCardFull" type="XML" />
             </f:GridContainer>
 

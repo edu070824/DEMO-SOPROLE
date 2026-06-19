@@ -135,7 +135,10 @@
               <Link text="View all →" press=".onNavCatalog" />
             </HBox>
             <f:GridContainer id="gridFeatured" class="soproleProductGrid" items="{/featured}">
-              <f:layout><f:GridContainerSettings rowSize="14rem" columnSize="9.5rem" gap="0.75rem" /></f:layout>
+              <f:layout><f:GridContainerSettings
+  rowSize="16rem"
+  columnSize="13rem"
+  gap="1rem" /></f:layout>
               <core:Fragment fragmentName="soprole.portal.view.ProductCardFull" type="XML" />
             </f:GridContainer>
           </VBox>
@@ -153,7 +156,10 @@
               <Link text="Shop now →" class="soproleBakeryLink" press=".onNavCatalog" />
             </HBox>
             <f:GridContainer id="gridBakery" class="soproleProductGrid" items="{/bakery}">
-              <f:layout><f:GridContainerSettings rowSize="14rem" columnSize="9.5rem" gap="0.75rem" /></f:layout>
+              <f:layout><f:GridContainerSettings
+  rowSize="16rem"
+  columnSize="13rem"
+  gap="1rem" /></f:layout>
               <core:Fragment fragmentName="soprole.portal.view.ProductCardFull" type="XML" />
             </f:GridContainer>
           </VBox>
