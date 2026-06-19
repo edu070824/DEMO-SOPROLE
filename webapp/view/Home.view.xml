@@ -17,7 +17,7 @@
 
       <core:Fragment fragmentName="soprole.portal.view.Header" type="XML" />
 
-      <HBox class="soproleBody" alignItems="Start" wrap="Wrap">
+      <HBox class="soproleBody" alignItems="Start" wrap="NoWrap">
         <core:Fragment fragmentName="soprole.portal.view.Sidebar" type="XML" />
 
         <VBox class="soproleMain">
@@ -65,25 +65,89 @@
             </HBox>
           </VBox>
 
+<VBox class="soprolePreparedOrders">
+  <HBox class="soprolePreparedCard" alignItems="Center" justifyContent="SpaceBetween">
+    <HBox alignItems="Center" class="soprolePreparedLeft">
+      <core:Icon src="sap-icon://shipping-status" class="soprolePreparedIcon" />
+      <VBox>
+        <Text text="ORDER PREPARED BY THE SALES TEAM" class="soprolePreparedKicker" />
+        <Title text="Carlos Rojas (Sales Team) prepared a basket for you" level="H3" class="soprolePreparedTitle" />
+        <Text text="1 products · NZD 242,82 · review &amp; edit before you confirm" class="soprolePreparedMeta" />
+      </VBox>
+    </HBox>
+    <Button text="Review &amp; edit" icon="sap-icon://navigation-right-arrow" iconFirst="false" type="Emphasized" press=".onOpenCart" class="soprolePreparedBtn" />
+  </HBox>
+
+  <HBox class="soprolePreparedCard" alignItems="Center" justifyContent="SpaceBetween">
+    <HBox alignItems="Center" class="soprolePreparedLeft">
+      <core:Icon src="sap-icon://shipping-status" class="soprolePreparedIcon" />
+      <VBox>
+        <Text text="ORDER PREPARED BY THE SALES TEAM" class="soprolePreparedKicker" />
+        <Title text="Carlos Rojas (Sales Team) prepared a basket for you" level="H3" class="soprolePreparedTitle" />
+        <Text text="1 products · NZD 242,82 · review &amp; edit before you confirm" class="soprolePreparedMeta" />
+      </VBox>
+    </HBox>
+    <Button text="Review &amp; edit" icon="sap-icon://navigation-right-arrow" iconFirst="false" type="Emphasized" press=".onOpenCart" class="soprolePreparedBtn" />
+  </HBox>
+
+  <HBox class="soprolePreparedCard" alignItems="Center" justifyContent="SpaceBetween">
+    <HBox alignItems="Center" class="soprolePreparedLeft">
+      <core:Icon src="sap-icon://shipping-status" class="soprolePreparedIcon" />
+      <VBox>
+        <Text text="ORDER PREPARED BY THE SALES TEAM" class="soprolePreparedKicker" />
+        <Title text="Carlos Rojas (Sales Team) prepared a basket for you" level="H3" class="soprolePreparedTitle" />
+        <Text text="1 products · NZD 242,82 · review &amp; edit before you confirm" class="soprolePreparedMeta" />
+      </VBox>
+    </HBox>
+    <Button text="Review &amp; edit" icon="sap-icon://navigation-right-arrow" iconFirst="false" type="Emphasized" press=".onOpenCart" class="soprolePreparedBtn" />
+  </HBox>
+</VBox>
+
           <VBox class="soproleCampaign">
             <Title text="Festival de Yoghurt &amp; Quesos" level="H2" class="soproleCampaignTitle" />
             <Text text="Las categorías estrella del invierno en un solo lugar — pensado para tu vitrina." class="soproleCampaignText" />
             <Button text="Ver la campaña" icon="sap-icon://navigation-right-arrow" iconFirst="false" class="soproleCampaignBtn" press=".onNavCatalog" />
           </VBox>
 
-          <VBox class="soproleCard soproleSection">
-            <HBox justifyContent="SpaceBetween" alignItems="End" class="soproleSectionHead" wrap="Wrap">
-              <VBox>
-                <HBox alignItems="Center" class="soproleKickRow"><core:Icon src="sap-icon://lightbulb" class="soproleKickIcon" /><Text text="SUGGESTED ORDER" class="soproleKicker" /></HBox>
-                <HBox alignItems="Center"><Title text="Your essentials this week" level="H3" class="soproleSectionTitle" /><HBox alignItems="Center" class="soproleBlueprint"><core:Icon src="sap-icon://hint" class="soproleBpIcon" /><Text text="Blueprint" /></HBox></HBox>
-              </VBox>
-              <Link text="Review all →" press=".onNavCatalog" />
-            </HBox>
-            <f:GridContainer id="gridSuggested" class="soproleProductGrid" items="{/suggested}">
-              <f:layout><f:GridContainerSettings rowSize="16rem" columnSize="9.5rem" gap="0.75rem" /></f:layout>
-              <core:Fragment fragmentName="soprole.portal.view.ProductCardSuggested" type="XML" />
-            </f:GridContainer>
-          </VBox>
+          <VBox class="soproleCard soproleSection soproleSuggestedPanel">
+  <HBox justifyContent="SpaceBetween" alignItems="Start" class="soproleSectionHead" wrap="Wrap">
+    <VBox>
+      <HBox alignItems="Center" class="soproleKickRow">
+        <core:Icon src="sap-icon://lightbulb" class="soproleKickIcon" />
+        <Text text="SUGGESTED ORDER" class="soproleKicker" />
+      </HBox>
+      <HBox alignItems="Center">
+        <Title text="Your essentials this week" level="H3" class="soproleSectionTitle" />
+        <HBox alignItems="Center" class="soproleBlueprint">
+          <core:Icon src="sap-icon://hint" class="soproleBpIcon" />
+          <Text text="Blueprint" />
+        </HBox>
+      </HBox>
+    </VBox>
+    <Link text="Review all →" press=".onNavCatalog" class="soproleReviewLink" />
+  </HBox>
+
+  <ScrollContainer
+  horizontal="true"
+  vertical="false"
+  width="100%"
+  class="soproleSuggestedScroller">
+
+  <HBox
+    items="{/suggested}"
+    class="soproleSuggestedRow">
+
+    <items>
+      <core:Fragment fragmentName="soprole.portal.view.ProductCardSuggested" type="XML" />
+    </items>
+  </HBox>
+</ScrollContainer>
+
+  <HBox class="soproleSuggestedBottom" justifyContent="SpaceBetween" alignItems="Center">
+    <Text text="8 items · est. NZD 1.693,35" class="soproleSuggestedSummary" />
+    <Button text="Review &amp; add all" icon="sap-icon://navigation-right-arrow" iconFirst="false" type="Emphasized" press=".onNavCart" class="soproleReviewAddBtn" />
+  </HBox>
+</VBox>
 
           <HBox class="soproleTwoCol" wrap="Wrap" alignItems="Start">
             <VBox class="soproleCard soproleSection soproleCol">
