@@ -1098,6 +1098,104 @@ margin-bottom:18px;
     align-items:center;
 }
 
+
+/* ===========================
+   HEADER V2
+=========================== */
+
+.soproleHeaderV2{
+    height:84px;
+    padding:0 32px;
+    background:#fff;
+    border-bottom:1px solid #ececec;
+
+    display:flex;
+    align-items:center;
+    gap:34px;
+}
+
+.soproleHeaderBrand{
+    flex:0 0 auto;
+}
+
+.soproleHeaderSearchArea{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.soproleHeaderSearchV2{
+    width:100%;
+    max-width:620px;
+}
+
+.soproleHeaderRight{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex:0 0 auto;
+}
+
+
+.soproleHeaderBrand{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.soproleHeaderRight{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-left:auto;
+}
+
+.soproleOrderingClean{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    height:58px;
+    padding:0 18px;
+
+    border:1px solid #e6e8ef;
+    border-radius:28px;
+
+    background:#fff;
+}
+
+.soproleHeaderBlueprint{
+    height:58px;
+    padding:0 18px;
+
+    border-radius:28px;
+}
+
+.soproleHeaderIconWrap{
+    position:relative;
+}
+
+.soproleHeaderIconBtn{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+}
+
+.soproleAccountClean{
+    height:58px;
+    padding:0 18px;
+
+    border:1px solid #e6e8ef;
+    border-radius:30px;
+
+    gap:12px;
+    background:#fff;
+}
+
 /* ===== Home redesign reference style ===== */
 
 .soprolePage .sapMPageBgSolid,
@@ -1108,6 +1206,64 @@ margin-bottom:18px;
 .soproleNotice {
   display: none;
 }
+
+
+/*======================================
+  USER MENU
+======================================*/
+
+.soproleUserMenu .sapMPopoverCont{
+    border-radius:22px;
+}
+
+.soproleUserMenuContent{
+    padding:22px;
+    min-width:320px;
+}
+
+.soproleUserHeader{
+    gap:16px;
+    margin-bottom:14px;
+}
+
+.soproleUserName{
+    font-size:1.45rem;
+    font-weight:700;
+    color:#2d2d2d;
+}
+
+.soproleUserEmail{
+    font-size:1rem;
+    color:#7c8494;
+}
+
+.soproleUserMenuButton{
+
+    width:100%;
+    height:48px;
+
+    justify-content:flex-start;
+}
+
+.soproleUserMenuButton .sapMBtnInner{
+    justify-content:flex-start;
+    font-weight:600;
+}
+
+.soproleUserLogout{
+
+    width:100%;
+    height:48px;
+}
+
+.soproleUserLogout .sapMBtnInner{
+
+    justify-content:space-between;
+    font-weight:700;
+}
+
+
+
 
 .soproleHeader {
   height: 5.6rem;
