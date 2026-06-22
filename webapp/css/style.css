@@ -864,6 +864,105 @@
   color: #ffffff !important;
 }
 
+/*==================================================
+SIDEBAR MODERNO
+==================================================*/
+
+.soproleSidebar{
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:18px;
+    padding:1.5rem;
+    box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+
+/* Título */
+
+.soproleSidebarTitle{
+    color:#7B8190;
+    font-size:.95rem;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:1.3rem;
+}
+
+/* Caja Suggested */
+
+.soproleSuggestedBox{
+    margin-bottom:1.3rem;
+    padding-bottom:1.3rem;
+    border-bottom:1px solid #ECEEF2;
+}
+
+.soproleSuggestedItem{
+    background:#F8E8E8;
+    border-radius:14px;
+    padding:1rem;
+    cursor:pointer;
+    transition:all .25s ease;
+}
+
+.soproleSuggestedItem:hover{
+    background:#F5DEDE;
+}
+
+.soproleSuggestedIcon{
+    color:#D73B31;
+    font-size:1rem;
+    margin-right:.75rem;
+}
+
+.soproleSuggestedLink{
+    color:#C53929 !important;
+    font-size:1.05rem;
+    font-weight:700;
+}
+
+/* Lista */
+
+.soproleCatList{
+    border:none;
+    background:transparent;
+}
+
+
+
+/* ==========================================
+   Categoría seleccionada
+========================================== */
+
+.soproleCatList .sapMLIBSelected{
+
+    background:#F8E8E8 !important;
+
+    border-radius:10px !important;
+
+    box-shadow:none !important;
+
+    border:1px solid #E8C9C9;
+
+}
+
+.soproleCatList .sapMLIBSelected .sapMSLITitle{
+
+    color:#C53929 !important;
+
+    font-weight:800 !important;
+
+}
+
+.soproleCatList .sapMLIBSelected .sapMSLICounter{
+
+    color:#C53929 !important;
+
+    font-weight:800 !important;
+
+}
+
+.soproleCatalogLayout{
+    gap:2.5rem;
+}
 /* ===== Home redesign reference style ===== */
 
 .soprolePage .sapMPageBgSolid,

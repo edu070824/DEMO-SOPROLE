@@ -21,8 +21,13 @@
           <Text text="All products" class="soproleMutedStrong" />
         </HBox>
 
-        <HBox alignItems="Start" wrap="Wrap">
-          <core:Fragment fragmentName="soprole.portal.view.Sidebar" type="XML" />
+        <HBox 
+        alignItems="Start" 
+        wrap="Wrap"
+        class="soproleCatalogLayout">
+          <core:Fragment 
+          fragmentName="soprole.portal.view.Sidebar" 
+          type="XML" />
 
           <VBox class="soproleMain">
             <layoutData><FlexItemData growFactor="1" baseSize="0%" /></layoutData>
