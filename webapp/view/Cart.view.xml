@@ -204,7 +204,7 @@
                 class="soproleMuted" />
             </VBox>
 
-            <Link text="Review all →" />
+            <Link text="Review all →" press=".onNavCatalog" />
           </HBox>
 
           <HBox

@@ -1,9 +1,9 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
   <VBox class="soproleSidebar">
-    <Text text="{= ${view>/page} === 'catalog' ? 'CATEGORIES' : 'BROWSE' }" class="soproleSideKicker" />
+    <Text text="BROWSE" class="soproleSideKicker" />
     <VBox class="soproleSideNav">
       <HBox alignItems="Center" class="{= ${view>/page} !== 'catalog' ? 'soproleNavItem soproleNavActive' : 'soproleNavItem' }">
-        <core:Icon src="sap-icon://lightbulb" class="soproleNavIcon" />
+        <core:Icon src="sap-icon://favorite" class="soproleNavIcon" />
         <Link text="Suggested order" press=".onNavHome" class="soproleNavLink" />
       </HBox>
       <HBox alignItems="Center" class="{= ${view>/page} === 'catalog' ? 'soproleNavItem soproleNavActive' : 'soproleNavItem' }">
