@@ -262,7 +262,40 @@ sap.ui.define([
           }.bind(this)
         }
       );
-    }
+    },
+
+onOpenUserMenu: function (oEvent) {
+  var oView = this.getView();
+  var oButton = oEvent.getSource();
+
+  if (!this._pUserMenu) {
+    this._pUserMenu = Fragment.load({
+      id: oView.getId(),
+      name: "soprole.portal.view.UserMenu",
+      controller: this
+    }).then(function (oPopover) {
+      oView.addDependent(oPopover);
+      return oPopover;
+    });
+  }
+
+  this._pUserMenu.then(function (oPopover) {
+    oPopover.openBy(oButton);
+  });
+},
+
+onMyAccountButtonPress: function () {
+    MessageToast.show("My account");
+},
+
+onMyOrdersButtonPress: function () {
+    MessageToast.show("My orders");
+},
+
+onLogoutButtonPress: function () {
+    MessageToast.show("Logout");
+}
+
 
   });
 });

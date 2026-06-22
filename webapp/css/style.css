@@ -1263,7 +1263,59 @@ margin-bottom:18px;
 }
 
 
+/*======================================
+  USER MENU
+======================================*/
 
+.soproleUserMenu .sapMPopoverCont{
+    border-radius:22px;
+}
+
+.soproleUserMenuContent{
+    padding:22px;
+    min-width:320px;
+}
+
+.soproleUserHeader{
+    gap:16px;
+    margin-bottom:14px;
+}
+
+.soproleUserName{
+    font-size:1.45rem;
+    font-weight:700;
+    color:#2d2d2d;
+}
+
+.soproleUserEmail{
+    font-size:1rem;
+    color:#7c8494;
+}
+
+.soproleUserMenuButton{
+
+    width:100%;
+    height:48px;
+
+    justify-content:flex-start;
+}
+
+.soproleUserMenuButton .sapMBtnInner{
+    justify-content:flex-start;
+    font-weight:600;
+}
+
+.soproleUserLogout{
+
+    width:100%;
+    height:48px;
+}
+
+.soproleUserLogout .sapMBtnInner{
+
+    justify-content:space-between;
+    font-weight:700;
+}
 
 .soproleHeader {
   height: 5.6rem;
@@ -1273,8 +1325,97 @@ margin-bottom:18px;
   box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
 }
 
+.soproleAccountButton{
+    padding:0 !important;
+    border:none !important;
+    background:transparent !important;
+}
+
+.soproleAccountButton .sapMBtnInner{
+    padding:0;
+    border:none;
+    background:transparent;
+}
+
+.soproleAccountButton:hover .soproleAccountClean{
+    background:#f7f8fb;
+    transition:.2s;
+    cursor:pointer;
+}
+
 .soproleLogoBadge.sapMBtn {
   display: none;
+}
+.soproleUserMenuContent {
+    padding: 1.25rem;
+    min-width: 280px;
+}
+
+.soproleUserHeader {
+    padding-bottom: 1rem;
+    gap: 0.75rem;
+}
+
+.soproleUserHeaderText {
+    margin-left: 0.75rem;
+    flex: 1;
+}
+
+.soproleUserName {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    white-space: normal !important;
+    line-height: 1.3;
+}
+
+.soproleUserEmail {
+    font-size: 0.8rem;
+    color: #6c6c6c;
+    margin-top: 0.2rem;
+}
+
+.soproleUserDivider {
+    height: 1px !important;
+    min-height: 1px !important;
+    background-color: #e5e5e5 !important;
+    width: 100%;
+    margin: 0.4rem 0;
+}
+
+.soproleUserMenuButton {
+    width: 100%;
+    color: #4e5256 !important;
+}
+
+.soproleUserMenuButton .sapMBtnContent {
+    justify-content: flex-start !important;
+}
+
+.soproleUserFooter {
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
+.soproleUserLogoutIcon {
+    color: #6c6c6c;
+    font-size: 1.1rem;
+}
+
+.soproleUserLogout {
+    width: 100%;
+    color: #414242 !important;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.soproleUserLogout .sapMBtnContent {
+    flex: 1;
+    justify-content: flex-end !important;
+}
+
+.soproleUserLogout .sapMBtnIcon {
+    margin-right: auto !important;
 }
 
 .soproleLogo2 {

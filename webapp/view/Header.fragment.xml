@@ -11,15 +11,13 @@
       <Text text="WHOLESALE PORTAL" class="soprolePortalLabel" />
     </HBox>
 
-
-<VBox class="soproleHeaderSearchArea">
-    <SearchField
-    placeholder="Search products, SKU..."
-    liveChange=".onSearch"
-    search=".onSearch"
-    class="soproleHeaderSearchV2"/>
-
-      </VBox>
+    <VBox class="soproleHeaderSearchArea">
+      <SearchField
+        placeholder="Search products, SKU..."
+        liveChange=".onSearch"
+        search=".onSearch"
+        class="soproleHeaderSearchV2"/>
+    </VBox>
 
     <HBox alignItems="Center" class="soproleHeaderRight">
       <HBox alignItems="Center" class="soproleOrderingClean">
@@ -46,13 +44,19 @@
         <Text text="{= ${cart>/count} > 0 ? ${cart>/count} : '53' }" class="soproleHeaderBadge" />
       </VBox>
 
-      <HBox alignItems="Center" class="soproleAccountClean">
-        <Avatar initials="AB" displaySize="S" backgroundColor="Accent10" class="soproleAvatarClean" />
-        <VBox class="soproleAccountTextClean">
-          <Text text="Allpress La Nonna Italia..." class="soproleAccountNameClean" maxLines="1" />
-          <Text text="Customer 14010343" class="soproleAccountSubClean" />
+      <HBox alignItems="Center" class="soproleAccountButton">
+        <Avatar
+          initials="AB"
+          displaySize="S"
+          backgroundColor="Accent10"
+          press=".onOpenUserMenu"
+          class="soproleAccountAvatar"/>
+        <VBox class="soproleAccountTextClean" press=".onOpenUserMenu">
+          <Text text="Allpress La Nonna Italia..." class="soproleAccountNameClean"/>
+          <Text text="Customer 14010343" class="soproleAccountSubClean"/>
         </VBox>
       </HBox>
+
     </HBox>
   </HBox>
 </core:FragmentDefinition>
