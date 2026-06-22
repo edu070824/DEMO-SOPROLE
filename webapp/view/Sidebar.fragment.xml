@@ -7,22 +7,37 @@
 
     <VBox class="soproleSuggestedBox">
 
-        <HBox
-            alignItems="Center"
-            class="soproleSuggestedItem">
+    <HBox
+        alignItems="Center"
+        class="soproleSuggestedItem">
 
-            <core:Icon
-                src="sap-icon://favorite"
-                class="soproleSuggestedIcon"/>
+        <core:Icon
+            src="sap-icon://favorite"
+            class="soproleSuggestedIcon"/>
 
-            <Link
-                text="Suggested order"
-                press=".onNavHome"
-                class="soproleSuggestedLink"/>
+        <Link
+            text="Suggested order"
+            press=".onNavHome"
+            class="soproleSuggestedLink"/>
 
-        </HBox>
+    </HBox>
 
-    </VBox>
+    <HBox
+    alignItems="Center"
+    class="soproleSuggestedItem">
+
+    <core:Icon
+        src="sap-icon://list"
+        class="soproleSuggestedIcon"/>
+
+    <Link
+        text="All products"
+        press=".onCategoryPress"
+        class="soproleSuggestedLink"/>
+
+</HBox>
+
+</VBox>
 
     <List
     items="{/categories}"
