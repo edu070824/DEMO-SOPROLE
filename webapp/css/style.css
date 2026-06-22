@@ -1175,15 +1175,9 @@ margin-bottom:18px;
     border-radius:28px;
 }
 
-.soproleHeaderIconWrap{
-    position:relative;
-}
 
-.soproleHeaderIconBtn{
-    width:58px;
-    height:58px;
-    border-radius:50%;
-}
+
+
 
 .soproleAccountClean{
     height:58px;
@@ -1292,12 +1286,261 @@ margin-bottom:18px;
     color:#7c8494;
 }
 
+/* Badge superpuesto arriba a la derecha del ícono */
+.soproleHeaderIconWrap {
+    position: relative !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.25rem;
+}
+
+.soproleHeaderIconWrap .sapMHBox {
+    position: relative !important;
+}
+
+.soproleHeaderBadge {
+    position: absolute !important;
+    top: 2px !important;
+    right: 2px !important;
+    background: #c0392b !important;
+    color: #fff !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    min-width: 1.1rem !important;
+    height: 1.1rem !important;
+    line-height: 1.1rem !important;
+    border-radius: 999px !important;
+    text-align: center !important;
+    padding: 0 0.25rem !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+}
+.soproleHeaderIconBtn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
 .soproleUserMenuButton{
 
     width:100%;
     height:48px;
 
     justify-content:flex-start;
+}
+
+/* ============================================================
+   LOGIN PAGE
+   ============================================================ */
+
+.soproleLoginPage {
+    background: #f4f4f4;
+}
+
+.soproleLoginPage .sapMPageBgStandard {
+    background: #f4f4f4 !important;
+}
+
+.soproleLoginWrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+/* --- Panel izquierdo --- */
+.soproleLoginLeft {
+    width: 52%;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #ff2200ec 0%, #890303 100%);
+    padding: 2.5rem 3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.soproleLoginLogoBox {
+    background: #fff;
+    border-radius: 14px;
+    padding: 0.5rem 0.75rem;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.soproleLoginLogoIcon {
+    color: #ff1900;
+    font-size: 1.4rem;
+}
+
+.soproleLoginLogoText {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f81900;
+}
+
+.soproleLoginEyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1rem;
+}
+
+.soproleLoginHeadline {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a0a00;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    white-space: normal !important;
+}
+
+.soproleLoginSub {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+    white-space: normal !important;
+    max-width: 380px;
+}
+
+.soproleLoginFooterIcon {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+}
+
+.soproleLoginFooterText {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+}
+
+/* --- Panel derecho --- */
+.soproleLoginRight {
+    width: 48%;
+    min-height: 100vh;
+    background: #f4f4f4;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.soproleLoginForm {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    gap: 0.75rem;
+}
+
+.soproleLoginTitle {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #1a1a1a !important;
+    margin-bottom: 0.25rem;
+}
+
+.soproleLoginFormSub {
+    font-size: 0.9rem;
+    color: #6c6c6c;
+    margin-bottom: 1.25rem;
+    white-space: normal !important;
+}
+
+.soproleLoginLabel {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.soproleLoginInput {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 8px !important;
+    border: 1.5px solid #d0d0d0 !important;
+    background: #fff !important;
+}
+
+.soproleLoginInput .sapMInputBaseInner {
+    border-radius: 8px !important;
+    height: 2.75rem !important;
+    font-size: 0.95rem !important;
+}
+
+.soproleLoginBtn.sapMBtn {
+    background: #f01800 !important;
+    border-color: #fa1900 !important;
+    border-radius: 999px !important;
+    height: 3rem !important;
+    width: 100% !important;
+    margin-top: 1.25rem;
+}
+
+.soproleLoginBtn .sapMBtnInner {
+    background: #e41903 !important;
+    border-color: #ff1900 !important;
+    border-radius: 999px !important;
+    height: 3rem !important;
+}
+
+.soproleLoginBtn .sapMBtnContent {
+    color: #fff !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    line-height: 3rem !important;
+}
+
+.soproleLoginLinks {
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.soproleLoginLink {
+    font-size: 0.8rem;
+    color: #6c6c6c !important;
+}
+
+.soproleLoginDemo {
+    margin-top: 1.25rem;
+    background: #fdf6e3;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    gap: 0.4rem;
+    border: 1px solid #f0e0b0;
+}
+
+.soproleLoginDemoIcon {
+    color: #b8860b;
+    font-size: 0.9rem;
+}
+
+.soproleLoginDemoBold {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #5a3e00;
+}
+
+.soproleLoginDemoText {
+    font-size: 0.85rem;
+    color: #5a3e00;
+    white-space: normal !important;
+}
+
+/* Neutralizar TODO foco en inputs del login */
+.soproleLoginInput,
+.soproleLoginInput *,
+.soproleLoginInput input,
+.soproleLoginInput.sapMInputFocused,
+.soproleLoginInput.sapMFocus,
+.soproleLoginInput:focus-within,
+.soproleLoginInput .sapMInputBaseInner,
+.soproleLoginInput .sapMInputBaseInner:focus,
+.soproleLoginInput.sapMInputFocused .sapMInputBaseInner {
+    border-color: #d0d0d0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.soproleLoginInput .sapMInputBaseInner::before,
+.soproleLoginInput .sapMInputBaseInner::after {
+    display: none !important;
+    border: none !important;
 }
 
 .soproleUserMenuButton .sapMBtnInner{
@@ -2028,18 +2271,9 @@ margin-bottom:18px;
   font-size: 0.78rem;
 }
 
-.soproleHeaderPill {
-  height: 3.05rem;
-  padding: 0 1rem;
-  gap: 0.45rem;
-  border-radius: 999px;
-  white-space: nowrap;
-}
 
-.soproleHeaderBlueprint {
-  background: #fdebea;
-  border: 1px solid #f4c9c5;
-}
+
+
 
 .soproleHeaderBlueprint .sapUiIcon,
 .soproleHeaderBlueprint .sapMText {
@@ -2047,9 +2281,7 @@ margin-bottom:18px;
   font-weight: 900;
 }
 
-.soproleHeaderIconWrap {
-  position: relative;
-}
+
 
 .soproleHeaderIconBtn.sapMBtn {
   width: 3.05rem;
@@ -2075,22 +2307,7 @@ justify-content: center;
   line-height: 1;
 }
 
-.soproleHeaderBadge {
-  position: absolute;
-  top: -0.45rem;
-  right: -0.15rem;
-  min-width: 1.35rem;
-  height: 1.35rem;
-  padding: 0 0.25rem;
-  border-radius: 999px;
-  background: #d9362d;
-  color: #ffffff;
-  font-size: 0.72rem;
-  font-weight: 900;
-  line-height: 1.35rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(217, 54, 45, 0.35);
-}
+
 
 .soproleAccountClean {
   height: 3.05rem;

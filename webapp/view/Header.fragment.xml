@@ -34,15 +34,15 @@
         <Text text="Blueprint" />
       </HBox>
 
-      <VBox class="soproleHeaderIconWrap">
-        <Button icon="sap-icon://bell" type="Transparent" class="soproleHeaderIconBtn" tooltip="Notificaciones" />
-        <Text text="41" class="soproleHeaderBadge" />
-      </VBox>
+      <HBox class="soproleHeaderIconWrap">
+  <Button icon="sap-icon://bell" type="Transparent" class="soproleHeaderIconBtn" tooltip="Notificaciones" />
+  <Text text="41" class="soproleHeaderBadge" />
+</HBox>
 
-      <VBox class="soproleHeaderIconWrap">
-        <Button icon="sap-icon://cart" type="Transparent" press=".onOpenCart" class="soproleHeaderIconBtn" tooltip="Carrito" />
-        <Text text="{= ${cart>/count} > 0 ? ${cart>/count} : '53' }" class="soproleHeaderBadge" />
-      </VBox>
+<HBox class="soproleHeaderIconWrap">
+  <Button icon="sap-icon://cart" type="Transparent" press=".onOpenCart" class="soproleHeaderIconBtn" tooltip="Carrito" />
+  <Text text="{= ${cart>/count} > 0 ? ${cart>/count} : '53' }" class="soproleHeaderBadge" />
+</HBox>
 
       <HBox alignItems="Center" class="soproleAccountButton">
         <Avatar

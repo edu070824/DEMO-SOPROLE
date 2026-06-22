@@ -293,7 +293,14 @@ onMyOrdersButtonPress: function () {
 },
 
 onLogoutButtonPress: function () {
-    MessageToast.show("Logout");
+    // Cerrar el popover si está abierto
+    if (this._pUserMenu) {
+        this._pUserMenu.then(function (oPopover) {
+            oPopover.close();
+        });
+    }
+    // Navegar al login
+    this.getOwnerComponent().getRouter().navTo("RouteLogin");
 }
 
 

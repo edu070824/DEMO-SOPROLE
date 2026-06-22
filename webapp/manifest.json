@@ -84,28 +84,31 @@
       },
       "routes": [
         {
+          "name": "RouteLogin",
+          "pattern": "login",
+          "target": ["TargetLogin"]
+        },
+        {
           "name": "RouteHome",
           "pattern": "",
-          "target": [
-            "TargetHome"
-          ]
+          "target": ["TargetHome"]
         },
         {
           "name": "RouteCatalog",
           "pattern": "catalog",
-          "target": [
-            "TargetCatalog"
-          ]
+          "target": ["TargetCatalog"]
         },
         {
           "name": "RouteCart",
           "pattern": "cart",
-          "target": [
-            "TargetCart"
-          ]
+          "target": ["TargetCart"]
         }
       ],
       "targets": {
+        "TargetLogin": {
+          "id": "Login",
+          "name": "Login"
+        },
         "TargetHome": {
           "id": "Home",
           "name": "Home"
