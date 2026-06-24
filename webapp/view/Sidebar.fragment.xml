@@ -1,18 +1,58 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
   <VBox class="soproleSidebar">
-    <Text text="{= ${view>/page} === 'catalog' ? 'CATEGORIES' : 'BROWSE' }" class="soproleSideKicker" />
-    <VBox class="soproleSideNav">
-      <HBox alignItems="Center" class="{= ${view>/page} !== 'catalog' ? 'soproleNavItem soproleNavActive' : 'soproleNavItem' }">
-        <core:Icon src="sap-icon://lightbulb" class="soproleNavIcon" />
-        <Link text="Suggested order" press=".onNavHome" class="soproleNavLink" />
-      </HBox>
-      <HBox alignItems="Center" class="{= ${view>/page} === 'catalog' ? 'soproleNavItem soproleNavActive' : 'soproleNavItem' }">
-        <core:Icon src="sap-icon://grid" class="soproleNavIcon" />
-        <Link text="All products" press=".onNavCatalog" class="soproleNavLink" />
-      </HBox>
-    </VBox>
-    <List items="{/categories}" showSeparators="None" class="soproleCatList">
-      <StandardListItem title="{Name}" counter="{Count}" type="Active" press=".onCategoryPress" />
-    </List>
-  </VBox>
+
+    <Text
+        text="CATEGORIES"
+        class="soproleSidebarTitle"/>
+
+    <VBox class="soproleSuggestedBox">
+
+    <HBox
+        alignItems="Center"
+        class="soproleSuggestedItem">
+
+        <core:Icon
+            src="sap-icon://favorite"
+            class="soproleSuggestedIcon"/>
+
+        <Link
+            text="Suggested order"
+            press=".onNavHome"
+            class="soproleSuggestedLink"/>
+
+    </HBox>
+
+    <HBox
+    alignItems="Center"
+    class="soproleSuggestedItem">
+
+    <core:Icon
+        src="sap-icon://list"
+        class="soproleSuggestedIcon"/>
+
+    <Link
+        text="All products"
+        press=".onCategoryPress"
+        class="soproleSuggestedLink"/>
+
+</HBox>
+
+</VBox>
+
+    <List
+    items="{/categories}"
+    showSeparators="None"
+    mode="SingleSelectMaster"
+    includeItemInSelection="true"
+    selectionChange=".onCategoryPress"
+    class="soproleCatList">
+
+    <StandardListItem
+        title="{Name}"
+        counter="{Count}"
+        type="Active"/>
+
+</List>
+
+</VBox>
 </core:FragmentDefinition>

@@ -145,7 +145,7 @@ sap.ui.define([
     },
 
     onCategoryPress: function (oEvent) {
-      var oSource = oEvent.getSource();
+      var oSource = oEvent.getParameter("listItem") || oEvent.getSource();
 
       var sCat =
         oSource.getTitle && oSource.getTitle() ||

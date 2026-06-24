@@ -20,8 +20,12 @@ sap.ui.define([
       }.bind(this));
     },
     onCategoryPress: function (oEvent) {
-      this.getViewModel().setProperty("/category", oEvent.getSource().getTitle());
-      this.getRouter().navTo("RouteCatalog");
-    }
+
+    var oSource = oEvent.getParameter("listItem") || oEvent.getSource();
+
+    this.getViewModel().setProperty("/category", oSource.getTitle());
+
+    this.getRouter().navTo("RouteCatalog");
+}
   });
 });

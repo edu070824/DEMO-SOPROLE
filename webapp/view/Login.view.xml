@@ -1,0 +1,85 @@
+<mvc:View
+    controllerName="soprole.portal.controller.Login"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true">
+
+    <Page showHeader="false" class="soproleLoginPage">
+
+        <HBox height="100%" class="soproleLoginWrapper">
+
+            <!-- Panel izquierdo -->
+            <VBox class="soproleLoginLeft" justifyContent="SpaceBetween">
+
+                <!-- Logo -->
+                <HBox class="soproleLoginLogo">
+                    <VBox class="soproleLoginLogoBox">
+                        <core:Icon src="sap-icon://retail-store" class="soproleLoginLogoIcon"/>
+                        <Text text="Soprole" class="soproleLoginLogoText"/>
+                    </VBox>
+                </HBox>
+
+                <!-- Texto central -->
+                <VBox class="soproleLoginHero">
+                    <Text text="WHOLESALE PORTAL · OMNICHANNEL" class="soproleLoginEyebrow"/>
+                    <Text text="Everything your business needs to restock, in one place." class="soproleLoginHeadline"/>
+                    <Text text="Catalogue with your negotiated prices, recurring orders and the carts your field rep prepares — all in sync." class="soproleLoginSub"/>
+                </VBox>
+
+                <!-- Footer izquierdo -->
+                <HBox class="soproleLoginLeftFooter" alignItems="Center">
+                    <core:Icon src="sap-icon://sparkle" class="soproleLoginFooterIcon"/>
+                    <Text text="Dairy · Cheese · Desserts · Food Service" class="soproleLoginFooterText"/>
+                </HBox>
+
+            </VBox>
+
+            <!-- Panel derecho -->
+            <VBox class="soproleLoginRight" justifyContent="Center">
+
+                <VBox class="soproleLoginForm">
+
+                    <Title text="Welcome" class="soproleLoginTitle"/>
+                    <Text text="Sign in with your customer account to shop." class="soproleLoginFormSub"/>
+
+                    <Label text="Email" class="soproleLoginLabel"/>
+                    <Input
+                        id="loginEmail"
+                        value="buyer1@example.com"
+                        type="Email"
+                        class="soproleLoginInput"/>
+
+                    <Label text="Password" class="soproleLoginLabel"/>
+                    <Input
+                        id="loginPassword"
+                        value="soprole"
+                        type="Password"
+                        class="soproleLoginInput"/>
+
+                    <Button
+                        text="Sign in →"
+                        type="Emphasized"
+                        press=".onLoginButtonPress"
+                        class="soproleLoginBtn"/>
+
+                    <HBox justifyContent="SpaceBetween" class="soproleLoginLinks">
+                        <Link text="¿Olvidaste tu contraseña?" class="soproleLoginLink"/>
+                        <Link text="¿Cliente Soprole sin acceso? Solicítalo" class="soproleLoginLink"/>
+                    </HBox>
+
+                    <HBox class="soproleLoginDemo" alignItems="Center">
+                        <core:Icon src="sap-icon://sparkle" class="soproleLoginDemoIcon"/>
+                        <Text text="Demo: " class="soproleLoginDemoBold"/>
+                        <Text text="use buyer1@example.com with password soprole." class="soproleLoginDemoText"/>
+                    </HBox>
+
+                </VBox>
+
+            </VBox>
+
+        </HBox>
+
+    </Page>
+
+</mvc:View>

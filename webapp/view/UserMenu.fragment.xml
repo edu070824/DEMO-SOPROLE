@@ -1,0 +1,52 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <ResponsivePopover
+        id="userMenuPopover"
+        placement="Bottom"
+        showHeader="false"
+        contentWidth="300px"
+        class="soproleUserMenu">
+
+        <VBox class="soproleUserMenuContent">
+
+            <HBox class="soproleUserHeader" alignItems="Center">
+                <Avatar
+                    initials="AB"
+                    displaySize="M"
+                    backgroundColor="Accent10"/>
+                <VBox class="soproleUserHeaderText">
+                    <Text text="Allpress La Nonna Italian Bakery Wh Buyer" class="soproleUserName"/>
+                    <Text text="buyer1@example.com" class="soproleUserEmail"/>
+                </VBox>
+            </HBox>
+
+            <HBox class="soproleUserDivider"/>
+
+            <Button
+                text="My account"
+                type="Transparent"
+                press=".onMyAccountButtonPress"
+                class="soproleUserMenuButton"/>
+
+            <Button
+                text="My orders"
+                type="Transparent"
+                press=".onMyOrdersButtonPress"
+                class="soproleUserMenuButton"/>
+
+            <HBox class="soproleUserDivider"/>
+
+            <Button
+                icon="sap-icon://log"
+                text="Log out"
+                type="Transparent"
+                press=".onLogoutButtonPress"
+                class="soproleUserLogout"/>
+
+        </VBox>
+
+    </ResponsivePopover>
+
+</core:FragmentDefinition>

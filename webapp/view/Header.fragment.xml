@@ -1,31 +1,62 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.f">
-  <HBox class="soproleHeader" alignItems="Center" justifyContent="SpaceBetween">
-    <HBox alignItems="Center" class="soproleHeaderLeft">
-      <Button text="S" class="soproleLogoBadge" press=".onNavHome" />
-      <VBox class="soproleLogoText">
-        <Text text="Soprole" class="soproleLogo2" />
-        <Text text="WHOLESALE PORTAL" class="soproleLogoKick" />
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+  <HBox
+    class="soproleHeaderV2"
+    alignItems="Center">
+    <HBox alignItems="Center" class="soproleHeaderBrand">
+      <VBox class="soproleLogoClean" alignItems="Start">
+        <Text text="Soprole" class="soproleLogoWord" />
+        <Text text="Desde 1949" class="soproleLogoSince" />
       </VBox>
+
+      <Text text="WHOLESALE PORTAL" class="soprolePortalLabel" />
     </HBox>
-    <SearchField placeholder="Search products, SKU..." liveChange=".onSearch" search=".onSearch" class="soproleHeaderSearch" />
+
+    <VBox class="soproleHeaderSearchArea">
+      <SearchField
+        placeholder="Search products, SKU..."
+        liveChange=".onSearch"
+        search=".onSearch"
+        class="soproleHeaderSearchV2"/>
+    </VBox>
+
     <HBox alignItems="Center" class="soproleHeaderRight">
-      <HBox alignItems="Center" class="soproleOrderingFor">
-        <core:Icon src="sap-icon://retail-store" class="soproleStoreIcon" />
+      <HBox alignItems="Center" class="soproleOrderingClean">
+        <core:Icon src="sap-icon://retail-store" class="soproleOrderingIconClean" />
         <VBox>
-          <Text text="ORDERING FOR" class="soproleOrderingKick" />
-          <Text text="La Nonna — Britomart" class="soproleOrderingVal" />
+          <Text text="ORDERING FOR" class="soproleOrderingKickClean" />
+          <Text text="La Nonna — Britomart" class="soproleOrderingValueClean" />
         </VBox>
-        <core:Icon src="sap-icon://slim-arrow-down" class="soproleMuted" />
+        <core:Icon src="sap-icon://slim-arrow-down" class="soproleHeaderChevron" />
       </HBox>
-      <Button icon="sap-icon://bell" type="Transparent" class="soproleBell" tooltip="13 notificaciones" />
-      <Button icon="sap-icon://cart" text="{= ${cart>/count} > 0 ? ${cart>/count} : '' }" type="Emphasized" press=".onOpenCart" class="soproleCartBtn" />
-      <HBox alignItems="Center" class="soproleAccount">
-        <Avatar initials="AB" displaySize="XS" backgroundColor="Accent10" class="soproleAvatar" />
-        <VBox class="soproleAccountText">
-          <Text text="Allpress La Nonna Italia..." class="soproleAccountName" maxLines="1" />
-          <Text text="Customer 14010343" class="soproleAccountSub" />
+
+      <HBox alignItems="Center" class="soproleHeaderPill soproleHeaderBlueprint">
+        <core:Icon src="sap-icon://message-information" />
+        <Text text="Blueprint" />
+      </HBox>
+
+      <HBox class="soproleHeaderIconWrap">
+  <Button icon="sap-icon://bell" type="Transparent" class="soproleHeaderIconBtn" tooltip="Notificaciones" />
+  <Text text="41" class="soproleHeaderBadge" />
+</HBox>
+
+<HBox class="soproleHeaderIconWrap">
+  <Button icon="sap-icon://cart" type="Transparent" press=".onOpenCart" class="soproleHeaderIconBtn" tooltip="Carrito" />
+  <Text text="{= ${cart>/count} > 0 ? ${cart>/count} : '53' }" class="soproleHeaderBadge" />
+</HBox>
+
+      <HBox alignItems="Center" class="soproleAccountButton">
+        <Avatar
+          initials="AB"
+          displaySize="S"
+          backgroundColor="Accent10"
+          press=".onOpenUserMenu"
+          class="soproleAccountAvatar"/>
+        <VBox class="soproleAccountTextClean" press=".onOpenUserMenu">
+          <Text text="Allpress La Nonna Italia..." class="soproleAccountNameClean"/>
+          <Text text="Customer 14010343" class="soproleAccountSubClean"/>
         </VBox>
       </HBox>
+
     </HBox>
   </HBox>
 </core:FragmentDefinition>

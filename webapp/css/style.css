@@ -733,6 +733,30 @@
   color: #ffffff !important;
 }
 
+
+/* =========================
+   SIDEBAR CATEGORIAS STICKY
+   ========================= */
+
+.soproleSidebar {
+  position: sticky;
+  top: 1.5rem;
+  align-self: flex-start;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  z-index: 5;
+}
+
+@media (max-width: 1024px) {
+  .soproleSidebar {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+
+
 /* =========================
    FIX DEFINITIVO SUGERIDOS
    ========================= */
@@ -838,4 +862,1558 @@
 
 .soproleMiniAddBtn .sapUiIcon {
   color: #ffffff !important;
+}
+
+/*==================================================
+SIDEBAR MODERNO
+==================================================*/
+
+.soproleSidebar{
+    background:#fff;
+    border:1px solid #E5E7EB;
+    border-radius:18px;
+    padding:1.5rem;
+    box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+
+/* Título */
+
+.soproleSidebarTitle{
+    color:#7B8190;
+    font-size:.95rem;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:1.3rem;
+}
+
+/* Caja Suggested */
+
+.soproleSuggestedBox{
+    margin-bottom:1.3rem;
+    padding-bottom:1.3rem;
+    border-bottom:1px solid #ECEEF2;
+}
+
+.soproleSuggestedItem{
+    background:#F8E8E8;
+    border-radius:14px;
+    padding:1rem;
+    cursor:pointer;
+    transition:all .25s ease;
+}
+
+.soproleSuggestedItem:hover{
+    background:#F5DEDE;
+}
+
+.soproleSuggestedIcon{
+    color:#D73B31;
+    font-size:1rem;
+    margin-right:.75rem;
+}
+
+.soproleSuggestedLink{
+    color:#C53929 !important;
+    font-size:1.05rem;
+    font-weight:700;
+}
+
+/* Lista */
+
+.soproleCatList{
+    border:none;
+    background:transparent;
+}
+
+
+
+/* ==========================================
+   Categoría seleccionada
+========================================== */
+
+.soproleCatList .sapMLIBSelected{
+
+    background:#F8E8E8 !important;
+
+    border-radius:10px !important;
+
+    box-shadow:none !important;
+
+    border:1px solid #E8C9C9;
+
+}
+
+.soproleCatList .sapMLIBSelected .sapMSLITitle{
+
+    color:#C53929 !important;
+
+    font-weight:800 !important;
+
+}
+
+.soproleCatList .sapMLIBSelected .sapMSLICounter{
+
+    color:#C53929 !important;
+
+    font-weight:800 !important;
+
+}
+
+.soproleCatalogLayout{
+    gap:2.5rem;
+}
+
+.soproleSuggestedBox .soproleSuggestedItem + .soproleSuggestedItem {
+    margin-top: 0.75rem;
+}
+
+
+/* ===========================================================
+   PRODUCT CARD V2
+=========================================================== */
+
+.soproleProductCardV2{
+    background:#fff;
+    border:1px solid #d9dee7;
+    border-radius:18px;
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    height:420px;
+    width:100%;
+
+    box-sizing:border-box;
+}
+
+/* ---------- HEADER ---------- */
+
+.soproleCardHeader{
+    position:relative;
+
+    height:165px;
+
+    background:#f5f7fb;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.soproleProductImgV2{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.soproleDiscChip{
+    position:absolute;
+    top:12px;
+    left:12px;
+    z-index:2;
+}
+
+/* ---------- BODY ---------- */
+
+.soproleCardBody{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:18px;
+}
+
+.soproleProductBrand{
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.12em;
+    color:#7A8394;
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+}
+
+.soproleProductName{
+    font-size:0.92rem;
+line-height:1.35;
+font-weight:700;
+
+height:2.5em;
+
+margin-bottom:18px;
+}
+
+/* ---------- PRICE ---------- */
+
+.soprolePriceRow{
+    align-items:flex-end;
+
+    margin-bottom:14px;
+}
+
+.soprolePrice{
+    font-size:1.45rem;
+    font-weight:800;
+    color:#1d2330;
+}
+
+.soproleUnit{
+    margin-left:4px;
+    margin-bottom:4px;
+}
+
+/* ---------- BULK ---------- */
+
+.soproleBulkRow{
+    gap:6px;
+    margin-bottom:12px;
+}
+
+/* ---------- BENEFITS ---------- */
+
+.soproleBenefits{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:6px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.soproleProductFootV2{
+
+    padding:16px;
+
+    border-top:1px solid #edf0f5;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+/* ===========================
+   HEADER V2
+=========================== */
+
+.soproleHeaderV2{
+    height:84px;
+    padding:0 32px;
+    background:#fff;
+    border-bottom:1px solid #ececec;
+
+    display:flex;
+    align-items:center;
+    gap:34px;
+}
+
+.soproleHeaderBrand{
+    flex:0 0 auto;
+}
+
+.soproleHeaderSearchArea{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.soproleHeaderSearchV2{
+    width:100%;
+    max-width:620px;
+}
+
+.soproleHeaderRight{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex:0 0 auto;
+}
+
+
+.soproleHeaderBrand{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.soproleHeaderRight{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-left:auto;
+}
+
+.soproleOrderingClean{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    height:58px;
+    padding:0 18px;
+
+    border:1px solid #e6e8ef;
+    border-radius:28px;
+
+    background:#fff;
+}
+
+.soproleHeaderBlueprint{
+    height:58px;
+    padding:0 18px;
+
+    border-radius:28px;
+}
+
+
+
+
+
+.soproleAccountClean{
+    height:58px;
+    padding:0 18px;
+
+    border:1px solid #e6e8ef;
+    border-radius:30px;
+
+    gap:12px;
+    background:#fff;
+}
+
+/* ===== Home redesign reference style ===== */
+
+.soprolePage .sapMPageBgSolid,
+.soprolePage section {
+  background: #f7f8fb;
+}
+
+.soproleNotice {
+  display: none;
+}
+
+
+/*======================================
+  USER MENU
+======================================*/
+
+.soproleUserMenu .sapMPopoverCont{
+    border-radius:22px;
+}
+
+.soproleUserMenuContent{
+    padding:22px;
+    min-width:320px;
+}
+
+.soproleUserHeader{
+    gap:16px;
+    margin-bottom:14px;
+}
+
+.soproleUserName{
+    font-size:1.45rem;
+    font-weight:700;
+    color:#2d2d2d;
+}
+
+.soproleUserEmail{
+    font-size:1rem;
+    color:#7c8494;
+}
+
+.soproleUserMenuButton{
+
+    width:100%;
+    height:48px;
+
+    justify-content:flex-start;
+}
+
+.soproleUserMenuButton .sapMBtnInner{
+    justify-content:flex-start;
+    font-weight:600;
+}
+
+.soproleUserLogout{
+
+    width:100%;
+    height:48px;
+}
+
+.soproleUserLogout .sapMBtnInner{
+
+    justify-content:space-between;
+    font-weight:700;
+}
+
+
+/*======================================
+  USER MENU
+======================================*/
+
+.soproleUserMenu .sapMPopoverCont{
+    border-radius:22px;
+}
+
+.soproleUserMenuContent{
+    padding:22px;
+    min-width:320px;
+}
+
+.soproleUserHeader{
+    gap:16px;
+    margin-bottom:14px;
+}
+
+.soproleUserName{
+    font-size:1.45rem;
+    font-weight:700;
+    color:#2d2d2d;
+}
+
+.soproleUserEmail{
+    font-size:1rem;
+    color:#7c8494;
+}
+
+/* Badge superpuesto arriba a la derecha del ícono */
+.soproleHeaderIconWrap {
+    position: relative !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.25rem;
+}
+
+.soproleHeaderIconWrap .sapMHBox {
+    position: relative !important;
+}
+
+.soproleHeaderBadge {
+    position: absolute !important;
+    top: 2px !important;
+    right: 2px !important;
+    background: #c0392b !important;
+    color: #fff !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    min-width: 1.1rem !important;
+    height: 1.1rem !important;
+    line-height: 1.1rem !important;
+    border-radius: 999px !important;
+    text-align: center !important;
+    padding: 0 0.25rem !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+}
+.soproleHeaderIconBtn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.soproleUserMenuButton{
+
+    width:100%;
+    height:48px;
+
+    justify-content:flex-start;
+}
+
+/* ============================================================
+   LOGIN PAGE
+   ============================================================ */
+
+.soproleLoginPage {
+    background: #f4f4f4;
+}
+
+.soproleLoginPage .sapMPageBgStandard {
+    background: #f4f4f4 !important;
+}
+
+.soproleLoginWrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+/* --- Panel izquierdo --- */
+.soproleLoginLeft {
+    width: 52%;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #ff2200ec 0%, #890303 100%);
+    padding: 2.5rem 3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.soproleLoginLogoBox {
+    background: #fff;
+    border-radius: 14px;
+    padding: 0.5rem 0.75rem;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.soproleLoginLogoIcon {
+    color: #ff1900;
+    font-size: 1.4rem;
+}
+
+.soproleLoginLogoText {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f81900;
+}
+
+.soproleLoginEyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1rem;
+}
+
+.soproleLoginHeadline {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a0a00;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    white-space: normal !important;
+}
+
+.soproleLoginSub {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+    white-space: normal !important;
+    max-width: 380px;
+}
+
+.soproleLoginFooterIcon {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+}
+
+.soproleLoginFooterText {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+}
+
+/* --- Panel derecho --- */
+.soproleLoginRight {
+    width: 48%;
+    min-height: 100vh;
+    background: #f4f4f4;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.soproleLoginForm {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    gap: 0.75rem;
+}
+
+.soproleLoginTitle {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #1a1a1a !important;
+    margin-bottom: 0.25rem;
+}
+
+.soproleLoginFormSub {
+    font-size: 0.9rem;
+    color: #6c6c6c;
+    margin-bottom: 1.25rem;
+    white-space: normal !important;
+}
+
+.soproleLoginLabel {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.soproleLoginInput {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 8px !important;
+    border: 1.5px solid #d0d0d0 !important;
+    background: #fff !important;
+}
+
+.soproleLoginInput .sapMInputBaseInner {
+    border-radius: 8px !important;
+    height: 2.75rem !important;
+    font-size: 0.95rem !important;
+}
+
+.soproleLoginBtn.sapMBtn {
+    background: #f01800 !important;
+    border-color: #fa1900 !important;
+    border-radius: 999px !important;
+    height: 3rem !important;
+    width: 100% !important;
+    margin-top: 1.25rem;
+}
+
+.soproleLoginBtn .sapMBtnInner {
+    background: #e41903 !important;
+    border-color: #ff1900 !important;
+    border-radius: 999px !important;
+    height: 3rem !important;
+}
+
+.soproleLoginBtn .sapMBtnContent {
+    color: #fff !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    line-height: 3rem !important;
+}
+
+.soproleLoginLinks {
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.soproleLoginLink {
+    font-size: 0.8rem;
+    color: #6c6c6c !important;
+}
+
+.soproleLoginDemo {
+    margin-top: 1.25rem;
+    background: #fdf6e3;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    gap: 0.4rem;
+    border: 1px solid #f0e0b0;
+}
+
+.soproleLoginDemoIcon {
+    color: #b8860b;
+    font-size: 0.9rem;
+}
+
+.soproleLoginDemoBold {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #5a3e00;
+}
+
+.soproleLoginDemoText {
+    font-size: 0.85rem;
+    color: #5a3e00;
+    white-space: normal !important;
+}
+
+/* Neutralizar TODO foco en inputs del login */
+.soproleLoginInput,
+.soproleLoginInput *,
+.soproleLoginInput input,
+.soproleLoginInput.sapMInputFocused,
+.soproleLoginInput.sapMFocus,
+.soproleLoginInput:focus-within,
+.soproleLoginInput .sapMInputBaseInner,
+.soproleLoginInput .sapMInputBaseInner:focus,
+.soproleLoginInput.sapMInputFocused .sapMInputBaseInner {
+    border-color: #d0d0d0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.soproleLoginInput .sapMInputBaseInner::before,
+.soproleLoginInput .sapMInputBaseInner::after {
+    display: none !important;
+    border: none !important;
+}
+
+.soproleUserMenuButton .sapMBtnInner{
+    justify-content:flex-start;
+    font-weight:600;
+}
+
+.soproleUserLogout{
+
+    width:100%;
+    height:48px;
+}
+
+.soproleUserLogout .sapMBtnInner{
+
+    justify-content:space-between;
+    font-weight:700;
+}
+
+.soproleHeader {
+  height: 5.6rem;
+  padding: 0 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e7ebf1;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
+}
+
+.soproleAccountButton{
+    padding:0 !important;
+    border:none !important;
+    background:transparent !important;
+}
+
+.soproleAccountButton .sapMBtnInner{
+    padding:0;
+    border:none;
+    background:transparent;
+}
+
+.soproleAccountButton:hover .soproleAccountClean{
+    background:#f7f8fb;
+    transition:.2s;
+    cursor:pointer;
+}
+
+.soproleLogoBadge.sapMBtn {
+  display: none;
+}
+.soproleUserMenuContent {
+    padding: 1.25rem;
+    min-width: 280px;
+}
+
+.soproleUserHeader {
+    padding-bottom: 1rem;
+    gap: 0.75rem;
+}
+
+.soproleUserHeaderText {
+    margin-left: 0.75rem;
+    flex: 1;
+}
+
+.soproleUserName {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    white-space: normal !important;
+    line-height: 1.3;
+}
+
+.soproleUserEmail {
+    font-size: 0.8rem;
+    color: #6c6c6c;
+    margin-top: 0.2rem;
+}
+
+.soproleUserDivider {
+    height: 1px !important;
+    min-height: 1px !important;
+    background-color: #e5e5e5 !important;
+    width: 100%;
+    margin: 0.4rem 0;
+}
+
+.soproleUserMenuButton {
+    width: 100%;
+    color: #4e5256 !important;
+}
+
+.soproleUserMenuButton .sapMBtnContent {
+    justify-content: flex-start !important;
+}
+
+.soproleUserFooter {
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
+.soproleUserLogoutIcon {
+    color: #6c6c6c;
+    font-size: 1.1rem;
+}
+
+.soproleUserLogout {
+    width: 100%;
+    color: #414242 !important;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.soproleUserLogout .sapMBtnContent {
+    flex: 1;
+    justify-content: flex-end !important;
+}
+
+.soproleUserLogout .sapMBtnIcon {
+    margin-right: auto !important;
+}
+
+.soproleLogo2 {
+  color: #d8322a;
+  font-size: 1.45rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.soproleLogoKick {
+  color: #7b8492;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+}
+
+.soproleHeaderSearch {
+  max-width: 48rem;
+  height: 3.2rem;
+}
+
+.soproleHeaderSearch .sapMSFF {
+  border-radius: 999px;
+  border-color: #dde3ec;
+  height: 3.2rem;
+  background: #ffffff;
+}
+
+.soproleOrderingFor {
+  height: 3rem;
+  border-radius: 999px;
+  padding: 0.25rem 1rem;
+  background: #ffffff;
+  border: 1px solid #e1e6ee;
+}
+
+.soproleCartBtn .sapMBtnInner,
+.soproleBell .sapMBtnInner {
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  border-color: #e1e6ee !important;
+  color: #111827 !important;
+}
+
+.soproleAccount {
+  border: 1px solid #e1e6ee;
+  border-radius: 999px;
+  padding: 0.35rem 1rem 0.35rem 0.45rem;
+  background: #ffffff;
+}
+
+.soproleBody {
+  max-width: 1480px;
+  padding: 2rem 2rem 3rem;
+  gap: 2rem;
+}
+
+.soproleSidebar {
+  width: 17.5rem;
+  flex: 0 0 17.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e0e5ec;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  padding: 1rem;
+}
+
+.soproleSideKicker {
+  color: #a0a7b4;
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+}
+
+.soproleSideNav {
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.soproleNavItem {
+  min-height: 2.9rem;
+  border-radius: 0.7rem;
+  padding: 0 0.9rem;
+}
+
+.soproleNavActive {
+  background: #fdebea;
+}
+
+.soproleNavActive .sapMLnk,
+.soproleNavActive .soproleNavIcon {
+  color: #d8322a !important;
+}
+
+.soproleCatList .sapMSLITitleOnly .sapMSLITitle {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #4b5563;
+}
+
+.soproleCatList .sapMSLICounter {
+  color: #a6adba;
+  font-weight: 700;
+}
+
+.soproleMain {
+  gap: 1.5rem;
+}
+
+.soproleHeading {
+  margin-top: 0.25rem;
+}
+
+.soproleEyebrow,
+.soproleKicker {
+  color: #e23a32;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+}
+
+.soproleH1 .sapMTitle,
+.soproleH1 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #171b26;
+  font-size: 2.55rem !important;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.soproleLead {
+  color: #7c8594;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.soproleBlueprint {
+  background: #fdebea;
+  border: 1px solid #f6c9c5;
+  border-radius: 999px;
+  padding: 0.18rem 0.75rem;
+}
+
+.soproleBlueprint .sapMText,
+.soproleBpIcon {
+  color: #cf3b34 !important;
+  font-weight: 800;
+}
+
+.soproleCard.soproleLoyalty {
+  border-radius: 1rem;
+  border: 1px solid #e0e5ec;
+  border-left: 3px solid #e5b548;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+  padding: 1.05rem 1.3rem;
+}
+
+.soproleLoyaltyIcon {
+  background: #fff6dc;
+  color: #b98a1f;
+  border-radius: 0.85rem;
+}
+
+.soproleLoyaltyNum {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.9rem;
+  color: #171b26;
+}
+
+.soproleGoldBar .sapMPIBar {
+  background: #e4ad42 !important;
+}
+
+.soproleLoyaltyExpire {
+  background: #fff4e7;
+  border: 1px solid #f5ddbd;
+  border-radius: 0.55rem;
+}
+
+.soprolePreparedOrders {
+  gap: 1rem;
+}
+
+.soprolePreparedCard {
+  min-height: 6.4rem;
+  padding: 1.1rem 1.55rem;
+  border-radius: 1rem;
+  border: 1px solid #efb33e;
+  background: linear-gradient(90deg, #fffaf0, #ffffff);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+}
+
+.soprolePreparedLeft {
+  gap: 1.1rem;
+  min-width: 0;
+}
+
+.soprolePreparedIcon {
+  width: 3.4rem;
+  height: 3.4rem;
+  line-height: 3.4rem;
+  text-align: center;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #df3a30;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.soprolePreparedKicker {
+  color: #9a7429;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.soprolePreparedTitle .sapMTitle,
+.soprolePreparedTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #171b26;
+  font-size: 1.35rem !important;
+  font-weight: 800;
+}
+
+.soprolePreparedMeta {
+  color: #8b95a4;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.soprolePreparedBtn.sapMBtn {
+  min-width: 10.8rem;
+  height: 3.3rem;
+  border-radius: 999px;
+}
+
+.soprolePreparedBtn .sapMBtnInner {
+  height: 3.3rem;
+  border-radius: 999px !important;
+  background: #d9362d !important;
+  border-color: #d9362d !important;
+}
+
+.soprolePreparedBtn .sapMBtnContent,
+.soprolePreparedBtn .sapUiIcon {
+  color: #ffffff !important;
+  font-weight: 800;
+}
+
+.soproleCampaign {
+  min-height: 15rem;
+  border-radius: 1rem;
+  padding: 2.4rem 2.8rem;
+  background: linear-gradient(135deg, #b92e25, #7d1512);
+}
+
+.soproleCampaignTitle .sapMTitle,
+.soproleCampaignTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.15rem !important;
+  font-weight: 800;
+}
+
+.soproleCampaignBtn .sapMBtnInner {
+  border-radius: 0.55rem !important;
+}
+
+.soproleSection {
+  border-radius: 1rem;
+  border: 1px solid #e0e5ec;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+@media (max-width: 980px) {
+  .soproleHeader {
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .soproleHeaderSearch {
+    order: 3;
+    max-width: none;
+    width: 100%;
+  }
+
+  .soprolePreparedCard {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .soprolePreparedBtn.sapMBtn {
+    width: 100%;
+  }
+}
+
+
+/* ===== Suggested / Orders / Campaigns redesign ===== */
+
+.soproleSuggestedPanel {
+  padding: 1.9rem;
+}
+
+.soproleSuggestedPanel .soproleSectionHead {
+  margin-bottom: 1.25rem;
+}
+
+.soproleReviewLink {
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.soproleSuggestedGrid {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.8rem;
+}
+
+.soproleSuggestedGrid .sapFGridContainer {
+  min-width: max-content;
+}
+
+.soproleSuggestedCard {
+  height: 20rem;
+  border: 1px solid #e3e8ef;
+  border-radius: 0.9rem;
+  background: #fbfcfe;
+  padding: 0.9rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.soproleSuggestedImgWrap {
+  position: relative;
+  height: 9.5rem;
+  border-radius: 0.7rem;
+  background: #ffffff;
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+
+.soproleSuggestedImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.soproleSuggestedTag {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  z-index: 3;
+  border-radius: 999px;
+  padding: 0.32rem 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.soproleSuggestedTagRed {
+  background: #d9342b;
+}
+
+.soproleSuggestedTagGold {
+  background: #e7b64d;
+  color: #6b4b0a;
+}
+
+.soproleSuggestedTagBlue {
+  background: #3d87d7;
+}
+
+.soproleSuggestedName {
+  min-height: 2.9rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #1f2430;
+}
+
+.soproleSuggestedQty {
+  margin-top: 0.65rem;
+  color: #7e8795;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.soproleSuggestedFoot {
+  margin-top: auto;
+}
+
+.soproleSuggestedPrice {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #1b2029;
+}
+
+.soproleSuggestedAdd.sapMBtn {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  border-radius: 0.85rem;
+}
+
+.soproleSuggestedAdd .sapMBtnInner {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  border-radius: 0.85rem !important;
+  background: #d9362d !important;
+  border-color: #d9362d !important;
+}
+
+.soproleSuggestedAdd .sapUiIcon {
+  color: #ffffff !important;
+  font-size: 1.25rem;
+}
+
+.soproleSuggestedBottom {
+  border-top: 1px solid #e5e9f0;
+  margin-top: 1rem;
+  padding-top: 1.4rem;
+}
+
+.soproleSuggestedSummary {
+  color: #7e8795;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.soproleReviewAddBtn.sapMBtn {
+  height: 3.2rem;
+  border-radius: 999px;
+}
+
+.soproleReviewAddBtn .sapMBtnInner {
+  height: 3.2rem;
+  border-radius: 999px !important;
+  background: #d9362d !important;
+  border-color: #d9362d !important;
+  padding-inline: 1.4rem;
+}
+
+.soproleReviewAddBtn .sapMBtnContent,
+.soproleReviewAddBtn .sapUiIcon {
+  color: #ffffff !important;
+  font-weight: 800;
+}
+
+.soproleOrderRow {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #e8ebf0;
+}
+
+.soproleOrderId {
+  color: #1f2430;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.soproleOrderRow .sapMBtnInner {
+  border-radius: 999px !important;
+}
+
+.soproleCampaignList .sapMLIB {
+  margin-bottom: 0.75rem;
+  border: 1px solid #e5e9f0;
+  border-radius: 0.75rem;
+  background: #fbfcfe;
+}
+
+.soproleCampaignList .sapMSLITitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #20242e;
+}
+
+.soproleCampaignList .sapMSLIImgIcon {
+  color: #aeb5c1;
+}
+
+@media (max-width: 980px) {
+  .soproleSuggestedPanel {
+    padding: 1.2rem;
+  }
+
+  .soproleSuggestedCard {
+    height: 19rem;
+  }
+
+  .soproleSuggestedBottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .soproleReviewAddBtn.sapMBtn {
+    width: 100%;
+  }
+}
+
+/* ===== Clean header redesign ===== */
+
+.soproleHeaderClean {
+  height: 5.4rem;
+  padding: 0 1.8rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e6ebf2;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.035);
+  box-sizing: border-box;
+  gap: 1.5rem;
+}
+
+.soproleHeaderBrand {
+  flex: 0 0 auto;
+  min-width: 17rem;
+  gap: 1.25rem;
+}
+
+.soproleLogoClean {
+  min-width: 5.2rem;
+  padding-right: 1.05rem;
+  border-right: 1px solid #e5e9f0;
+}
+
+.soproleLogoWord {
+  color: #d9362d;
+  font-size: 1.55rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+.soproleLogoSince {
+  color: #d9362d;
+  font-size: 0.45rem;
+  font-weight: 700;
+  margin-left: 2.4rem;
+  margin-top: -0.05rem;
+}
+
+.soprolePortalLabel {
+  color: #7c8492;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.26em;
+  white-space: nowrap;
+}
+
+.soproleHeaderSearchClean {
+  flex: 1 1 auto;
+  max-width: 50rem;
+  min-width: 18rem;
+}
+
+.soproleHeaderSearchClean .sapMSFF {
+  height: 3.25rem;
+  border-radius: 999px;
+  border: 1px solid #e0e6ee;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.soproleHeaderSearchClean .sapMSFI {
+  font-size: 1rem;
+  color: #111827;
+}
+
+.soproleHeaderSearchClean .sapMSFI::placeholder {
+  color: #8a93a3;
+}
+
+.soproleHeaderActions {
+  flex: 0 0 auto;
+  gap: 0.8rem;
+}
+
+.soproleOrderingClean {
+  height: 3.05rem;
+  padding: 0 1rem;
+  gap: 0.7rem;
+  border: 1px solid #e0e6ee;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.soproleOrderingIconClean {
+  color: #d9362d;
+  font-size: 1.05rem;
+}
+
+.soproleOrderingKickClean {
+  color: #8a93a3;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  line-height: 1;
+}
+
+.soproleOrderingValueClean {
+  color: #20242e;
+  font-size: 0.86rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.soproleHeaderChevron {
+  color: #8a93a3;
+  font-size: 0.78rem;
+}
+
+
+
+
+
+.soproleHeaderBlueprint .sapUiIcon,
+.soproleHeaderBlueprint .sapMText {
+  color: #c9342d !important;
+  font-weight: 900;
+}
+
+
+
+.soproleHeaderIconBtn.sapMBtn {
+  width: 3.05rem;
+  min-width: 3.05rem;
+  height: 3.05rem;
+  border-radius: 999px;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.soproleHeaderIconBtn .sapMBtnInner {
+  width: 3.05rem;
+  min-width: 3.05rem;
+  height: 3.05rem;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  border: 1px solid #e0e6ee !important;
+}
+
+.soproleHeaderIconBtn .sapUiIcon {
+  color: #111827 !important;
+  line-height: 1;
+}
+
+
+
+.soproleAccountClean {
+  height: 3.05rem;
+  min-width: 15.5rem;
+  max-width: 17rem;
+  padding: 0.25rem 1rem 0.25rem 0.35rem;
+  gap: 0.7rem;
+  border: 1px solid #e0e6ee;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.soproleAvatarClean {
+  background: #111827 !important;
+  color: #ffffff !important;
+  font-weight: 900;
+}
+
+.soproleAccountTextClean {
+  min-width: 0;
+}
+
+.soproleAccountNameClean {
+  color: #111827;
+  font-size: 0.86rem;
+  font-weight: 900;
+  max-width: 12rem;
+}
+
+.soproleAccountSubClean {
+  color: #7c8492;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1180px) {
+  .soproleHeaderClean {
+    height: auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .soproleHeaderBrand {
+    min-width: auto;
+  }
+
+  .soproleHeaderSearchClean {
+    order: 3;
+    max-width: none;
+    width: 100%;
+  }
+
+  .soproleHeaderActions {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .soprolePortalLabel,
+  .soproleHeaderBlueprint,
+  .soproleOrderingClean,
+  .soproleAccountTextClean {
+    display: none;
+  }
+
+  .soproleHeaderActions {
+    gap: 0.5rem;
+  }
+
+  .soproleAccountClean {
+    min-width: auto;
+    padding: 0.25rem;
+  }
+}
+
+.soproleSuggestedScroller {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.8rem;
+}
+
+.soproleSuggestedRow {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: max-content;
+}
+
+.soproleSuggestedRow .soproleSuggestedCard {
+  width: 13.5rem;
+  min-width: 13.5rem;
+  flex: 0 0 13.5rem;
+}
+
+.soproleBody {
+  flex-wrap: nowrap !important;
+}
+
+.soproleMain {
+  min-width: 0 !important;
+  overflow: hidden;
+}
+
+.soproleSuggestedScroller {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
